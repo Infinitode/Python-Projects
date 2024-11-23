@@ -36,10 +36,7 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `input()` to get the user's input.
-
-    > [!TIP]
-    > Learn more from here: https://docs.python.org/3/library/functions.html#input
+    Use `input()` to get the user's input. Learn more from here: https://docs.python.org/3/library/functions.html#input
 
     </details>
     <details><summary>Tip 2:</summary>
@@ -49,18 +46,12 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
     <details><summary>Tip 3:</summary>
 
-    Use `conditional` statements to check for valid values, and perform certain operations.
-
-    > [!TIP]
-    > Learn more from here: https://www.w3schools.com/python/python_conditions.asp
+    Use `conditional` statements to check for valid values, and perform certain operations. Learn more from here: https://www.w3schools.com/python/python_conditions.asp
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Print out the result using `print()`.
-
-    > [!TIP]
-    > Learn more from here: https://docs.python.org/3/library/functions.html#print
+    Print out the result using `print()`. Learn more from here: https://docs.python.org/3/library/functions.html#print
 
     </details>
 
