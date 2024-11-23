@@ -24,6 +24,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 ### 1. Calculator
 - **Description**: Build a simple calculator that performs basic arithmetic operations (`+`, `-`, `*`, `/`).
 
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/1_calculator.py
+
 - **Steps**:
   1. Prompt the user for two numbers and an operator.
   2. Perform the chosen operation.
