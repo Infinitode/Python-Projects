@@ -12,9 +12,9 @@ This repository is designed to help Python learners at all levels, starting with
 
 ## Setup
 
-- Make sure that you have at least Python `3.6` or later (we recommend `3.12`) installed on your computer. You can do a quick search and download it from a trusted provider for your platform.
+- Ensure have at least Python `3.6` or later (we recommend `3.12` or later) installed on your computer. You can do a quick search and download it from a trusted provider for your platform.
 
-- Make sure that you have an IDE, or a place where you could code and run the Python interpreter.
+- Ensure you have an IDE or a place where you can code and run the Python interpreter.
 > [!TIP]
 > We use Visual Studio Code. It's fast, efficient, and has many extensions and customizability options.
 
@@ -55,14 +55,11 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
-Working code solutions can be found in the `/Beginner` folder.
-
----
+> [!NOTE]
+> Working code solutions are in the `/Beginner` folder.
 
 ## Contributing
 Contributions are welcome! If you have project ideas or improvements, feel free to fork the repository and open a pull request.
-
----
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
