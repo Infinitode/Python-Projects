@@ -55,6 +55,138 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
+### 2. Number Guessing Game
+- **Description**: Build a simple random number generator, where users have to submit their guesses as to what the number is. Accept a range within 10 of the random number. `[0 - 100]`
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/2_random_guesser.py
+
+- **Steps**:
+  1. Generate a random number within the range `0 - 100`.
+  2. Prompt the user for a number input.
+  3. Compare the input to a valid range within 10 of the random number.
+  4. Display the result.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use the `random` module to generate a random number within the range.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use `input()` to prompt the user for input.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Use `conditional` statements to check for valid values within the range of `10`. Learn more from here: https://www.w3schools.com/python/python_conditions.asp
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Print out the result using `print()`. Learn more from here: https://docs.python.org/3/library/functions.html#print
+
+    </details>
+
+### 3. Password Generator
+- **Description**: Build a simple password generator than can generate custom length passwords, from 8 up to 128 characters. Use uppercase, lowercase, symbols, and numbers.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/3_password_generator.py
+
+- **Steps**:
+  1. Define your password generator's maps or strings.
+  2. Prompt the user for a number `[8 - 128]` input.
+  3. Generate the password.
+  4. Display the result.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use the `string` module for character sets like punctuation, letters or special characters.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use `input()` to prompt the user for input.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Use a `loop` to generate the password up until the given length.
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Print out the result using `print()`.
+
+    </details>
+
+### 4. Tip Calculator
+- **Description**: Build a simple tip calculator, that calculates the tip based on the total and the desired percentage with splits.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/4_tip_calculator.py
+
+- **Steps**:
+  1. Get the total from the user.
+  2. Get the tip percentage from the user.
+  3. Get the amount of people who should split the bill.
+  3. Calculate the tip.
+  4. Display the result.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Get all inputs using `input()`.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Calculate the `tip_amount`, `new_total` and `splits_per_person` using basic arithmetic and math.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Print out the result using `print()`.
+
+    </details>
+
+### 5. Temperature Converter
+- **Description**: Build a simple temperature converter that converts between Celsius and Fahrenheit.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/5_temperature_converter.py
+
+- **Steps**:
+  1. Define conversion values for each conversion.
+  2. Prompt the user for the unit to convert to, and from.
+  3. Prompt the user for a temperature value.
+  4. Convert.
+  5. Display the result.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use predefined formulas for accurate conversion between units.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use `input()` to prompt the user for input.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Print out the result using `print()`.
+
+    </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
