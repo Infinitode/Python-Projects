@@ -187,6 +187,36 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
+### 6. Palindrome Checker
+- **Description**: Build a simple palindrome checker.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/6_palindrome_checker.py
+
+- **Steps**:
+  1. Prompt the user for a word.
+  2. Reverse the string.
+  3. Check if it is equal to the original.
+  4. Display the result.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `input()` for input.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    You can easily reverse the string using array manipulation techniques. `[::-1]`
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Print out the result using `print()`.
+
+    </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
