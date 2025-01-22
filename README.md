@@ -7,8 +7,9 @@ This repository is designed to help Python learners at all levels, starting with
 ## Table of Contents
 1. [Setup](#setup)
 2. [Beginner Projects](#beginner-projects)
-3. [Contributing](#contributing)
-4. [License](#license)
+3. [Intermediate Projects](#intermediate-projects)
+4. [Contributing](#contributing)
+5. [License](#license)
 
 ## Setup
 
@@ -217,8 +218,78 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
+### 7. Word Counter
+- **Description**: Build a simple word counter.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/7_word_counter.py
+
+- **Steps**:
+  1. Prompt the user for a file path (TXT).
+  2. Read the file path.
+  3. Count the words in the read data.
+  4. Display the result.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `input()` for input.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Read the file using `read operations` (https://www.geeksforgeeks.org/how-to-read-from-a-file-in-python/) in Python.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Count the number of words using `split()` and `len()`.
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Print out the result using `print()`.
+
+    </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
+
+## Intermediate Projects
+These projects are ideal for those with experience in Python. Each project includes a description, steps to follow, and tips for completing it.
+
+### 1. Tic Tac Toe
+- **Description**: Build a tic tac toe board, with it's own algorithm for winning and countering player moves.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/1_tic_tac_toe.py
+
+- **Steps**:
+  1. Create the board (3x3 grid) and other logic (handling invalid moves, etc.)
+  2. Handle player and computer moves, including ties, wins and losses.
+  3. Display the board and start the game.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use functions for repetitive tasks.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Create an algorithm that not only chooses certain priority positions on the board, but also counters player moves.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Add error handling and retries if a player chooses a place on the board that is already occupied.
+
+    </details>
+
+> [!NOTE]
+> Working code solutions are in the `/Intermediate` folder.
 
 ## Contributing
 Contributions are welcome! If you have project ideas or improvements, feel free to fork the repository and open a pull request.
