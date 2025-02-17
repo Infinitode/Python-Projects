@@ -253,6 +253,76 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
+### 8. Text Encryption
+- **Description**: Create a text encryption function with decryption as well.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/8_text_encryption.py
+
+- **Steps**:
+  1. Prompt the user for text and a password (to be used for encryption).
+  2. Encrypt the text.
+  3. Decrypt the text.
+  4. Display the results.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `input()` for input.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use simple encryption methods like Caesar cipher.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Store the password in a variable to use it later during decryption.
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Print out the results using `print()`.
+
+    </details>
+
+### 9. Countdown Timer
+- **Description**: Create a countdown timer for seconds and minutes.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/9_countdown_timer.py
+
+- **Steps**:
+  1. Prompt the user for a time, in a specific format.
+  2. Extract information from the provided time.
+  3. Countdown.
+  4. Display the results.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `input()` for input.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use simple string manipulation techniques to get the minutes and seconds from the provided time.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Use `time.sleep(1)` to count down in seconds.
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Print out the results using `print()`.
+
+    </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
