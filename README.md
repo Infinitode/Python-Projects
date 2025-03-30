@@ -323,6 +323,76 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
+### 10. Rock Paper Scissors
+- **Description**: Create a rock paper scissors game.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/10_rock_paper_scissors.py
+
+- **Steps**:
+  1. Prompt the user for a choice.
+  2. Generate a random choice for the computer.
+  3. Compare the choices.
+  4. Display the results.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `input()` for input.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use `random.choice()` to generate a random choice for the computer.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Use `conditional` statements to compare the choices and determine the winner.
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Print out the results using `print()`.
+
+    </details>
+
+### 11. Mad Libs Generator
+- **Description**: Create a Mad Libs generator.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/11_mad_libs_generator.py
+
+- **Steps**:
+  1. Define a template for the Mad Libs story.
+  2. Prompt the user for different types of words (noun, verb, adjective, etc.).
+  3. Replace the placeholders in the template with the user's words.
+  4. Display the completed Mad Libs story.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `input()` for input.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use string formatting to replace the placeholders in the template.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Create multiple templates for different stories.
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Print out the results using `print()`.
+
+    </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
