@@ -393,6 +393,40 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
+### 12. Dice Rolling Simulator
+- **Description**: Create a dice rolling simulator.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/12_dice_rolling_simulator.py
+
+- **Steps**:
+  1. Prompt the user for the number of dice to roll.
+  2. Roll the dice.
+  3. Display the results.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `input()` for input.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use `random.randint()` to generate a random number between 1 and 6.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Use a `loop` to roll multiple dice.
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Print out the results using `print()`.
+
+    </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
