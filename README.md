@@ -430,6 +430,46 @@ These projects are ideal for those new to Python. Each project includes a descri
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
+### 13. Hangman Game
+- **Description**: Implement the classic Hangman game where the player guesses letters to reveal a hidden word.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/13_hangman_game.py
+- **Steps**:
+  1. Create a list of words for the game.
+  2. Randomly select a word.
+  3. Display the word with blanks for hidden letters.
+  4. Allow the user to guess letters.
+  5. Keep track of guessed letters and remaining attempts.
+  6. Reveal letters in the word as they are guessed correctly.
+  7. End the game when the word is guessed or attempts run out.
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `random.choice()` to select a random word from a list.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use a `while` loop for the main game interactions.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Store guessed letters in a list to avoid repeat guesses and display them to the user.
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Represent the hidden word as a list of characters or underscores, updating it as letters are guessed.
+
+    </details>
+    <details><summary>Tip 5:</summary>
+
+    Keep a counter for incorrect guesses (attempts remaining).
+
+    </details>
+
 ## Intermediate Projects
 These projects are ideal for those with experience in Python. Each project includes a description, steps to follow, and tips for completing it.
 
