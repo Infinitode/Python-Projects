@@ -427,6 +427,166 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
+### 13. File Sorter
+- **Description**: Create a script that organizes files in a directory into subfolders based on their file type (e.g., .txt files go into a "Text" folder, .jpg files go into an "Images" folder).
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/13_file_sorter.py
+
+- **Steps**:
+  1. Prompt the user for the directory path to organize.
+  2. Scan the directory for all files.
+  3. For each file, get its extension (e.g., `.txt`, `.jpg`).
+  4. Create a subfolder corresponding to the file type if it doesn't already exist.
+  5. Move the file into the appropriate subfolder.
+  6. Display a summary of the actions taken.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use the `os` module to interact with the file system, such as listing files (`os.listdir()`), creating directories (`os.mkdir()`), and moving files (`os.rename()`).
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    The `pathlib` module is a modern and more object-oriented alternative to `os.path` for handling filesystem paths.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Use a dictionary to map file extensions to folder names (e.g., ` {".txt": "Text", ".jpg": "Images"} `).
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Remember to handle cases where a file has no extension or you want to ignore certain files/directories.
+
+    </details>
+
+### 14. Text Reverser
+- **Description**: Create a function that takes a string and returns it in reverse order.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/14_text_reverser.py
+
+- **Steps**:
+  1. Prompt the user to enter a string.
+  2. Create a function that takes the string as an argument.
+  3. Inside the function, reverse the string.
+  4. Return and display the reversed string.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Python's string slicing is a very concise way to reverse a string: `my_string[::-1]`.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    You could also use a loop to iterate through the string from end to start and build the new string.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Wrap your logic in a function to make it reusable.
+
+    </details>
+
+### 15. Simple Quiz Game
+- **Description**: Create a small program that asks multiple-choice questions from a predefined list and keeps score.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/15_simple_quiz_game.py
+
+- **Steps**:
+  1. Create a list of questions, with options and the correct answer for each.
+  2. Initialize a score variable to zero.
+  3. Loop through the questions, displaying each one to the user.
+  4. Prompt the user for their answer and check if it's correct.
+  5. Update the score if the answer is correct.
+  6. At the end of the quiz, display the final score.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use a list of dictionaries to store your questions, where each dictionary contains the question, options, and the correct answer.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use a `for` loop to iterate through your list of questions.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Keep track of the player's score in a variable that you increment for each correct answer.
+
+    </details>
+
+### 16. Prime Number Generator
+- **Description**: Create a small program that finds and prints all prime numbers up to a user-specified limit.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/16_prime_number_generator.py
+
+- **Steps**:
+  1. Prompt the user for an upper limit (a number).
+  2. Create a function to check if a number is prime.
+  3. Loop from 2 up to the user-specified limit.
+  4. For each number, use your function to check if it's prime.
+  5. Print all the numbers that are identified as prime.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    To check if a number `n` is prime, you only need to check for divisors up to the square root of `n`.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Consider edge cases like 0, 1, and 2.
+
+    </details>
+
+### 17. Fibonacci Sequence
+- **Description**: Create a function that generates the Fibonacci sequence up to a certain number of terms.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/17_fibonacci_sequence.py
+
+- **Steps**:
+  1. Prompt the user for the number of terms to generate.
+  2. Create a function that takes the number of terms as an argument.
+  3. Generate the Fibonacci sequence up to that number.
+  4. Return and display the sequence.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    The Fibonacci sequence starts with 0 and 1. Each subsequent number is the sum of the two preceding ones (e.g., 0, 1, 1, 2, 3, 5, 8...).
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use a loop and two variables to keep track of the last two numbers in the sequence to calculate the next one.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Handle edge cases, such as a user requesting 0 or 1 term.
+
+    </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
@@ -459,6 +619,126 @@ These projects are ideal for those with experience in Python. Each project inclu
     <details><summary>Tip 3:</summary>
 
     Add error handling and retries if a player chooses a place on the board that is already occupied.
+
+    </details>
+
+### 2. Sudoku Solver
+- **Description**: A program that can solve a partially completed Sudoku puzzle using a backtracking algorithm.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/2_sudoku_solver.py
+
+- **Steps**:
+  1. Represent the Sudoku board (e.g., a 9x9 2D list, with 0 for empty cells).
+  2. Create a function to find the next empty cell on the board.
+  3. Create a function to check if placing a number in a cell is valid (obeys row, column, and 3x3 box rules).
+  4. Implement the backtracking algorithm to recursively try numbers and solve the puzzle.
+  5. Display the initial and solved boards.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Backtracking involves trying a possibility, seeing if it leads to a solution, and if not, undoing it (backtracking) to try another.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    A helper function like `is_valid(board, number, position)` is essential for checking the rules of Sudoku.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Recursion is a natural fit for this problem. The base case for the recursion is when the board has no empty cells left.
+
+    </details>
+
+### 3. Basic Sorting Algorithms
+- **Description**: Write your own functions to implement sorting algorithms like Bubble Sort, Selection Sort, or Insertion Sort.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/3_sorting_algorithms.py
+
+- **Steps**:
+  1. Create a list of unsorted numbers.
+  2. Implement a function for Bubble Sort.
+  3. Implement a function for Selection Sort.
+  4. Implement a function for Insertion Sort.
+  5. For each algorithm, pass a copy of the unsorted list to the function and display the sorted result.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    **Bubble Sort**: Repeatedly step through the list, compare adjacent elements, and swap them if they are in the wrong order.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    **Selection Sort**: Repeatedly find the minimum element from the unsorted part and put it at the beginning.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    **Insertion Sort**: Build the final sorted array one item at a time, inserting each new item into its proper place.
+
+    </details>
+
+### 4. Prime Number Sieve
+- **Description**: A program that uses the Sieve of Eratosthenes algorithm to efficiently find all prime numbers up to a given limit.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/4_prime_sieve.py
+
+- **Steps**:
+  1. Prompt the user for an upper limit.
+  2. Create a boolean list (a "sieve") of size `limit + 1`, initially setting all entries to `True`.
+  3. Mark 0 and 1 as not prime (`False`).
+  4. Iterate from 2 up to the square root of the limit. If a number is prime (still `True`), mark all of its multiples as not prime (`False`).
+  5. Extract all numbers that are still marked as `True` and display them.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    The Sieve of Eratosthenes is much more efficient for finding all primes up to a limit than checking each number individually.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    You only need to iterate your main loop up to `sqrt(limit)` because any composite number `n` will have a prime factor less than or equal to `sqrt(n)`.
+
+    </details>
+
+### 5. Basic Caesar Cipher
+- **Description**: A program that can encrypt and decrypt a message using a simple shifting algorithm.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/5_caesar_cipher.py
+
+- **Steps**:
+  1. Prompt the user for a message, a shift key (an integer), and whether to encrypt or decrypt.
+  2. Create a function that takes the message, key, and mode as input.
+  3. Inside the function, iterate through each character of the message.
+  4. If the character is a letter, shift it by the key amount, wrapping around the alphabet if necessary (e.g., 'Z' shifted by 2 becomes 'B').
+  5. Preserve the case (uppercase/lowercase) and leave non-alphabetic characters unchanged.
+  6. Return and display the resulting message.
+
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    The modulo operator (`%`) is perfect for handling the "wrap-around" logic for the alphabet. `(char_position + shift) % 26`.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    The `string` module (`string.ascii_lowercase`, `string.ascii_uppercase`) can provide you with the alphabet, so you don't have to type it out yourself.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    To decrypt, you can simply use the same function but with a negative shift key.
 
     </details>
 
