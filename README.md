@@ -4,6 +4,10 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
+**Total Projects:** 27  
+**Total Beginner Projects:** 21  
+**Total Intermediate Projects:** 6
+
 ## Table of Contents
 1. [Setup](#setup)
 2. [Beginner Projects](#beginner-projects)
@@ -427,10 +431,113 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
-### 13. File Sorter
+### 13. Hangman Game
+- **Description**: Implement the classic Hangman game where the player guesses letters to reveal a hidden word.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/13_hangman_game.py
+- **Steps**:
+  1. Create a list of words for the game.
+  2. Randomly select a word.
+  3. Display the word with blanks for hidden letters.
+  4. Allow the user to guess letters.
+  5. Keep track of guessed letters and remaining attempts.
+  6. Reveal letters in the word as they are guessed correctly.
+  7. End the game when the word is guessed or attempts run out.
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `random.choice()` to select a random word from a list.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use a `while` loop for the main game interactions.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Store guessed letters in a list to avoid repeat guesses and display them to the user.
+
+    </details>
+    <details><summary>Tip 4:</summary>
+
+    Represent the hidden word as a list of characters or underscores, updating it as letters are guessed.
+
+    </details>
+    <details><summary>Tip 5:</summary>
+
+    Keep a counter for incorrect guesses (attempts remaining).
+
+    </details>
+
+### 14. Address Book
+- **Description**: A simple command-line contact manager.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/14_address_book.py
+- **Steps**:
+  1. Create functions to add, view, and delete contacts.
+  2. Store contacts in a file (e.g., JSON).
+  3. Create a main loop to interact with the user.
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use a dictionary to store contact information.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use the `json` module to save and load contacts from a file.
+
+    </details>
+
+### 15. Pomodoro Timer
+- **Description**: A time management tool to help you stay focused.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/15_pomodoro_timer.py
+- **Steps**:
+  1. Create a function to run a countdown timer.
+  2. Prompt the user for work and break durations.
+  3. Alternate between work and break sessions.
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use the `time` module to pause execution.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use a loop to alternate between work and break sessions.
+
+    </details>
+
+### 16. Budget Tracker
+- **Description**: A tool to track your income and expenses.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/16_budget_tracker.py
+- **Steps**:
+  1. Create functions to add income and expenses.
+  2. Store transactions in a file (e.g., JSON).
+  3. Calculate and display the current balance.
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use lists of dictionaries to store income and expense transactions.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use the `json` module to save and load transaction data.
+
+    </details>
+
+### 17. File Sorter
 - **Description**: Create a script that organizes files in a directory into subfolders based on their file type (e.g., .txt files go into a "Text" folder, .jpg files go into an "Images" folder).
 
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/13_file_sorter.py
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/17_file_sorter.py
 
 - **Steps**:
   1. Prompt the user for the directory path to organize.
@@ -464,10 +571,10 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
-### 14. Text Reverser
+### 18. Text Reverser
 - **Description**: Create a function that takes a string and returns it in reverse order.
 
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/14_text_reverser.py
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/18_text_reverser.py
 
 - **Steps**:
   1. Prompt the user to enter a string.
@@ -494,10 +601,10 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
-### 15. Simple Quiz Game
+### 19. Simple Quiz Game
 - **Description**: Create a small program that asks multiple-choice questions from a predefined list and keeps score.
 
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/15_simple_quiz_game.py
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/19_simple_quiz_game.py
 
 - **Steps**:
   1. Create a list of questions, with options and the correct answer for each.
@@ -526,10 +633,10 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
-### 16. Prime Number Generator
+### 20. Prime Number Generator
 - **Description**: Create a small program that finds and prints all prime numbers up to a user-specified limit.
 
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/16_prime_number_generator.py
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/20_prime_number_generator.py
 
 - **Steps**:
   1. Prompt the user for an upper limit (a number).
@@ -557,10 +664,10 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
-### 17. Fibonacci Sequence
+### 21. Fibonacci Sequence
 - **Description**: Create a function that generates the Fibonacci sequence up to a certain number of terms.
 
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/17_fibonacci_sequence.py
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/21_fibonacci_sequence.py
 
 - **Steps**:
   1. Prompt the user for the number of terms to generate.
@@ -622,10 +729,31 @@ These projects are ideal for those with experience in Python. Each project inclu
 
     </details>
 
-### 2. Sudoku Solver
+### 2. Text-based Adventure Game
+- **Description**: An interactive fiction game where you can explore and make choices.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/2_adventure_game.py
+- **Steps**:
+  1. Create a story with different rooms and choices.
+  2. Use functions to represent different parts of the story.
+  3. Get user input to navigate through the story.
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use a dictionary to define the game world, with rooms, descriptions, and choices.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    Use a loop to keep the game running until the player reaches an end state.
+
+    </details>
+
+### 3. Sudoku Solver
 - **Description**: A program that can solve a partially completed Sudoku puzzle using a backtracking algorithm.
 
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/2_sudoku_solver.py
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/3_sudoku_solver.py
 
 - **Steps**:
   1. Represent the Sudoku board (e.g., a 9x9 2D list, with 0 for empty cells).
@@ -653,10 +781,10 @@ These projects are ideal for those with experience in Python. Each project inclu
 
     </details>
 
-### 3. Basic Sorting Algorithms
+### 4. Basic Sorting Algorithms
 - **Description**: Write your own functions to implement sorting algorithms like Bubble Sort, Selection Sort, or Insertion Sort.
 
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/3_sorting_algorithms.py
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/4_sorting_algorithms.py
 
 - **Steps**:
   1. Create a list of unsorted numbers.
@@ -684,10 +812,10 @@ These projects are ideal for those with experience in Python. Each project inclu
 
     </details>
 
-### 4. Prime Number Sieve
+### 5. Prime Number Sieve
 - **Description**: A program that uses the Sieve of Eratosthenes algorithm to efficiently find all prime numbers up to a given limit.
 
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/4_prime_sieve.py
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/5_prime_sieve.py
 
 - **Steps**:
   1. Prompt the user for an upper limit.
@@ -710,10 +838,10 @@ These projects are ideal for those with experience in Python. Each project inclu
 
     </details>
 
-### 5. Basic Caesar Cipher
+### 6. Basic Caesar Cipher
 - **Description**: A program that can encrypt and decrypt a message using a simple shifting algorithm.
 
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/5_caesar_cipher.py
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/6_caesar_cipher.py
 
 - **Steps**:
   1. Prompt the user for a message, a shift key (an integer), and whether to encrypt or decrypt.
