@@ -873,27 +873,6 @@ These projects are ideal for those with experience in Python. Each project inclu
 > [!NOTE]
 > Working code solutions are in the `/Intermediate` folder.
 
-### 2. Text-based Adventure Game
-- **Description**: An interactive fiction game where you can explore and make choices.
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/2_adventure_game.py
-- **Steps**:
-  1. Create a story with different rooms and choices.
-  2. Use functions to represent different parts of the story.
-  3. Get user input to navigate through the story.
-- **Tips:**
-
-    </summary>
-    <details><summary>Tip 1:</summary>
-
-    Use a dictionary to define the game world, with rooms, descriptions, and choices.
-
-    </details>
-    <details><summary>Tip 2:</summary>
-
-    Use a loop to keep the game running until the player reaches an end state.
-
-    </details>
-
 ## Contributing
 Contributions are welcome! If you have project ideas or improvements, feel free to fork the repository and open a pull request.
 
