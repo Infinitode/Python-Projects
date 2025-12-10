@@ -4,8 +4,8 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
-**Total Projects:** 27  
-**Total Beginner Projects:** 21  
+**Total Projects:** 30
+**Total Beginner Projects:** 24
 **Total Intermediate Projects:** 6
 
 ## Table of Contents
@@ -37,8 +37,6 @@ These projects are ideal for those new to Python. Each project includes a descri
   3. Display the result.
 
 - **Tips:**
-
-    </summary>
     <details><summary>Tip 1:</summary>
 
     Use `input()` to get the user's input. Learn more from here: https://docs.python.org/3/library/functions.html#input
@@ -72,8 +70,6 @@ These projects are ideal for those new to Python. Each project includes a descri
   4. Display the result.
 
 - **Tips:**
-
-    </summary>
     <details><summary>Tip 1:</summary>
 
     Use the `random` module to generate a random number within the range.
@@ -107,8 +103,6 @@ These projects are ideal for those new to Python. Each project includes a descri
   4. Display the result.
 
 - **Tips:**
-
-    </summary>
     <details><summary>Tip 1:</summary>
 
     Use the `string` module for character sets like punctuation, letters or special characters.
@@ -139,8 +133,8 @@ These projects are ideal for those new to Python. Each project includes a descri
   1. Get the total from the user.
   2. Get the tip percentage from the user.
   3. Get the amount of people who should split the bill.
-  3. Calculate the tip.
-  4. Display the result.
+  4. Calculate the tip.
+  5. Display the result.
 
 - **Tips:**
 
@@ -691,6 +685,87 @@ These projects are ideal for those new to Python. Each project includes a descri
     <details><summary>Tip 3:</summary>
 
     Handle edge cases, such as a user requesting 0 or 1 term.
+
+    </details>
+
+### 22. Email Slicer
+- **Description**: A simple tool that takes an email address and extracts the username and domain name.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/22_email_slicer.py
+- **Steps**:
+  1. Prompt the user for an email address.
+  2. Use string slicing to find the "@" symbol.
+  3. Separate the string into a username and a domain.
+  4. Display the results.
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `input()` to get user input. The `.strip()` method is useful for removing leading/trailing whitespace.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    String indexing (e.g., `email.index("@")`) can find the position of a specific character.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Slicing (e.g., `my_string[:5]`) is a great way to extract parts of a string.
+
+    </details>
+
+### 23. BMI Calculator
+- **Description**: A program that calculates a person's Body Mass Index (BMI) based on their height and weight.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/23_bmi_calculator.py
+- **Steps**:
+  1. Prompt the user for their weight (in kg) and height (in meters).
+  2. Calculate the BMI using the formula: `weight / (height ** 2)`.
+  3. Display the calculated BMI.
+  4. Provide a basic interpretation of the result (e.g., underweight, normal, overweight).
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    Use `float(input())` to convert user input into a number that can have decimal points.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    The power operator in Python is `**`.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Use `if/elif/else` statements to check the BMI range and provide the correct interpretation.
+
+    </details>
+
+### 24. Currency Converter
+- **Description**: A simple tool to convert between a few currencies using fixed exchange rates.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/24_currency_converter.py
+- **Steps**:
+  1. Define a dictionary with fixed exchange rates (e.g., relative to a base currency like USD).
+  2. Prompt the user for the amount, the source currency, and the target currency.
+  3. Perform the conversion calculation.
+  4. Display the final converted amount.
+- **Tips:**
+
+    </summary>
+    <details><summary>Tip 1:</summary>
+
+    A dictionary is a great way to store the currency exchange rates.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+    To make the logic simpler, first convert the input amount to a common base currency (like USD), and then convert that base amount to the final target currency.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+    Use the `.upper()` method on the currency input from the user to make the dictionary lookup case-insensitive.
 
     </details>
 
