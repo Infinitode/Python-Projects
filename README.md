@@ -21,8 +21,9 @@ This repository is designed to help Python learners at all levels, starting with
 - Ensure have at least Python `3.6` or later (we recommend `3.12` or later) installed on your computer. You can do a quick search and download it from a trusted provider for your platform.
 
 - Ensure you have an IDE or a place where you can code and run the Python interpreter.
-  > [!TIP]
-  > We use Visual Studio Code. It's fast, efficient, and has many extensions and customizability options.
+
+> [!TIP]
+> We use Visual Studio Code. It's fast, efficient, and has many extensions and customizability options.
 
 ## Beginner Projects
 
