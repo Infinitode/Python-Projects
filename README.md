@@ -4,11 +4,12 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
-**Total Projects:** 30
-**Total Beginner Projects:** 24
-**Total Intermediate Projects:** 6
+**Total Projects:** 36
+**Total Beginner Projects:** 27
+**Total Intermediate Projects:** 9
 
 ## Table of Contents
+
 1. [Setup](#setup)
 2. [Beginner Projects](#beginner-projects)
 3. [Intermediate Projects](#intermediate-projects)
@@ -20,13 +21,15 @@ This repository is designed to help Python learners at all levels, starting with
 - Ensure have at least Python `3.6` or later (we recommend `3.12` or later) installed on your computer. You can do a quick search and download it from a trusted provider for your platform.
 
 - Ensure you have an IDE or a place where you can code and run the Python interpreter.
-> [!TIP]
-> We use Visual Studio Code. It's fast, efficient, and has many extensions and customizability options.
+  > [!TIP]
+  > We use Visual Studio Code. It's fast, efficient, and has many extensions and customizability options.
 
 ## Beginner Projects
+
 These projects are ideal for those new to Python. Each project includes a description, steps to follow, and tips for completing it.
 
 ### 1. Calculator
+
 - **Description**: Build a simple calculator that performs basic arithmetic operations (`+`, `-`, `*`, `/`).
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/1_calculator.py
@@ -39,26 +42,27 @@ These projects are ideal for those new to Python. Each project includes a descri
 - **Tips:**
     <details><summary>Tip 1:</summary>
 
-    Use `input()` to get the user's input. Learn more from here: https://docs.python.org/3/library/functions.html#input
+  Use `input()` to get the user's input. Learn more from here: https://docs.python.org/3/library/functions.html#input
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use `variables` to store the user's input.
+  Use `variables` to store the user's input.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Use `conditional` statements to check for valid values, and perform certain operations. Learn more from here: https://www.w3schools.com/python/python_conditions.asp
+  Use `conditional` statements to check for valid values, and perform certain operations. Learn more from here: https://www.w3schools.com/python/python_conditions.asp
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Print out the result using `print()`. Learn more from here: https://docs.python.org/3/library/functions.html#print
+  Print out the result using `print()`. Learn more from here: https://docs.python.org/3/library/functions.html#print
 
     </details>
 
 ### 2. Number Guessing Game
+
 - **Description**: Build a simple random number generator, where users have to submit their guesses as to what the number is. Accept a range within 10 of the random number. `[0 - 100]`
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/2_random_guesser.py
@@ -72,26 +76,27 @@ These projects are ideal for those new to Python. Each project includes a descri
 - **Tips:**
     <details><summary>Tip 1:</summary>
 
-    Use the `random` module to generate a random number within the range.
+  Use the `random` module to generate a random number within the range.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use `input()` to prompt the user for input.
+  Use `input()` to prompt the user for input.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Use `conditional` statements to check for valid values within the range of `10`. Learn more from here: https://www.w3schools.com/python/python_conditions.asp
+  Use `conditional` statements to check for valid values within the range of `10`. Learn more from here: https://www.w3schools.com/python/python_conditions.asp
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Print out the result using `print()`. Learn more from here: https://docs.python.org/3/library/functions.html#print
+  Print out the result using `print()`. Learn more from here: https://docs.python.org/3/library/functions.html#print
 
     </details>
 
 ### 3. Password Generator
+
 - **Description**: Build a simple password generator than can generate custom length passwords, from 8 up to 128 characters. Use uppercase, lowercase, symbols, and numbers.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/3_password_generator.py
@@ -105,26 +110,27 @@ These projects are ideal for those new to Python. Each project includes a descri
 - **Tips:**
     <details><summary>Tip 1:</summary>
 
-    Use the `string` module for character sets like punctuation, letters or special characters.
+  Use the `string` module for character sets like punctuation, letters or special characters.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use `input()` to prompt the user for input.
+  Use `input()` to prompt the user for input.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Use a `loop` to generate the password up until the given length.
+  Use a `loop` to generate the password up until the given length.
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Print out the result using `print()`.
+  Print out the result using `print()`.
 
     </details>
 
 ### 4. Tip Calculator
+
 - **Description**: Build a simple tip calculator, that calculates the tip based on the total and the desired percentage with splits.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/4_tip_calculator.py
@@ -141,21 +147,22 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Get all inputs using `input()`.
+  Get all inputs using `input()`.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Calculate the `tip_amount`, `new_total` and `splits_per_person` using basic arithmetic and math.
+  Calculate the `tip_amount`, `new_total` and `splits_per_person` using basic arithmetic and math.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Print out the result using `print()`.
+  Print out the result using `print()`.
 
     </details>
 
 ### 5. Temperature Converter
+
 - **Description**: Build a simple temperature converter that converts between Celsius and Fahrenheit.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/5_temperature_converter.py
@@ -172,21 +179,22 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use predefined formulas for accurate conversion between units.
+  Use predefined formulas for accurate conversion between units.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use `input()` to prompt the user for input.
+  Use `input()` to prompt the user for input.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Print out the result using `print()`.
+  Print out the result using `print()`.
 
     </details>
 
 ### 6. Palindrome Checker
+
 - **Description**: Build a simple palindrome checker.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/6_palindrome_checker.py
@@ -202,21 +210,22 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `input()` for input.
+  Use `input()` for input.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    You can easily reverse the string using array manipulation techniques. `[::-1]`
+  You can easily reverse the string using array manipulation techniques. `[::-1]`
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Print out the result using `print()`.
+  Print out the result using `print()`.
 
     </details>
 
 ### 7. Word Counter
+
 - **Description**: Build a simple word counter.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/7_word_counter.py
@@ -232,26 +241,27 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `input()` for input.
+  Use `input()` for input.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Read the file using `read operations` (https://www.geeksforgeeks.org/how-to-read-from-a-file-in-python/) in Python.
+  Read the file using `read operations` (https://www.geeksforgeeks.org/how-to-read-from-a-file-in-python/) in Python.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Count the number of words using `split()` and `len()`.
+  Count the number of words using `split()` and `len()`.
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Print out the result using `print()`.
+  Print out the result using `print()`.
 
     </details>
 
 ### 8. Text Encryption
+
 - **Description**: Create a text encryption function with decryption as well.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/8_text_encryption.py
@@ -267,26 +277,27 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `input()` for input.
+  Use `input()` for input.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use simple encryption methods like Caesar cipher.
+  Use simple encryption methods like Caesar cipher.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Store the password in a variable to use it later during decryption.
+  Store the password in a variable to use it later during decryption.
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Print out the results using `print()`.
+  Print out the results using `print()`.
 
     </details>
 
 ### 9. Countdown Timer
+
 - **Description**: Create a countdown timer for seconds and minutes.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/9_countdown_timer.py
@@ -302,26 +313,27 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `input()` for input.
+  Use `input()` for input.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use simple string manipulation techniques to get the minutes and seconds from the provided time.
+  Use simple string manipulation techniques to get the minutes and seconds from the provided time.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Use `time.sleep(1)` to count down in seconds.
+  Use `time.sleep(1)` to count down in seconds.
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Print out the results using `print()`.
+  Print out the results using `print()`.
 
     </details>
 
 ### 10. Rock Paper Scissors
+
 - **Description**: Create a rock paper scissors game.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/10_rock_paper_scissors.py
@@ -337,26 +349,27 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `input()` for input.
+  Use `input()` for input.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use `random.choice()` to generate a random choice for the computer.
+  Use `random.choice()` to generate a random choice for the computer.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Use `conditional` statements to compare the choices and determine the winner.
+  Use `conditional` statements to compare the choices and determine the winner.
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Print out the results using `print()`.
+  Print out the results using `print()`.
 
     </details>
 
 ### 11. Mad Libs Generator
+
 - **Description**: Create a Mad Libs generator.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/11_mad_libs_generator.py
@@ -372,26 +385,27 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `input()` for input.
+  Use `input()` for input.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use string formatting to replace the placeholders in the template.
+  Use string formatting to replace the placeholders in the template.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Create multiple templates for different stories.
+  Create multiple templates for different stories.
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Print out the results using `print()`.
+  Print out the results using `print()`.
 
     </details>
 
 ### 12. Dice Rolling Simulator
+
 - **Description**: Create a dice rolling simulator.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/12_dice_rolling_simulator.py
@@ -406,26 +420,27 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `input()` for input.
+  Use `input()` for input.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use `random.randint()` to generate a random number between 1 and 6.
+  Use `random.randint()` to generate a random number between 1 and 6.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Use a `loop` to roll multiple dice.
+  Use a `loop` to roll multiple dice.
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Print out the results using `print()`.
+  Print out the results using `print()`.
 
     </details>
 
 ### 13. Hangman Game
+
 - **Description**: Implement the classic Hangman game where the player guesses letters to reveal a hidden word.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/13_hangman_game.py
 - **Steps**:
@@ -441,31 +456,32 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `random.choice()` to select a random word from a list.
+  Use `random.choice()` to select a random word from a list.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use a `while` loop for the main game interactions.
+  Use a `while` loop for the main game interactions.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Store guessed letters in a list to avoid repeat guesses and display them to the user.
+  Store guessed letters in a list to avoid repeat guesses and display them to the user.
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Represent the hidden word as a list of characters or underscores, updating it as letters are guessed.
+  Represent the hidden word as a list of characters or underscores, updating it as letters are guessed.
 
     </details>
     <details><summary>Tip 5:</summary>
 
-    Keep a counter for incorrect guesses (attempts remaining).
+  Keep a counter for incorrect guesses (attempts remaining).
 
     </details>
 
 ### 14. Address Book
+
 - **Description**: A simple command-line contact manager.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/14_address_book.py
 - **Steps**:
@@ -477,16 +493,17 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use a dictionary to store contact information.
+  Use a dictionary to store contact information.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use the `json` module to save and load contacts from a file.
+  Use the `json` module to save and load contacts from a file.
 
     </details>
 
 ### 15. Pomodoro Timer
+
 - **Description**: A time management tool to help you stay focused.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/15_pomodoro_timer.py
 - **Steps**:
@@ -498,16 +515,17 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use the `time` module to pause execution.
+  Use the `time` module to pause execution.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use a loop to alternate between work and break sessions.
+  Use a loop to alternate between work and break sessions.
 
     </details>
 
 ### 16. Budget Tracker
+
 - **Description**: A tool to track your income and expenses.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/16_budget_tracker.py
 - **Steps**:
@@ -519,16 +537,17 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use lists of dictionaries to store income and expense transactions.
+  Use lists of dictionaries to store income and expense transactions.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use the `json` module to save and load transaction data.
+  Use the `json` module to save and load transaction data.
 
     </details>
 
 ### 17. File Sorter
+
 - **Description**: Create a script that organizes files in a directory into subfolders based on their file type (e.g., .txt files go into a "Text" folder, .jpg files go into an "Images" folder).
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/17_file_sorter.py
@@ -546,26 +565,27 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use the `os` module to interact with the file system, such as listing files (`os.listdir()`), creating directories (`os.mkdir()`), and moving files (`os.rename()`).
+  Use the `os` module to interact with the file system, such as listing files (`os.listdir()`), creating directories (`os.mkdir()`), and moving files (`os.rename()`).
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    The `pathlib` module is a modern and more object-oriented alternative to `os.path` for handling filesystem paths.
+  The `pathlib` module is a modern and more object-oriented alternative to `os.path` for handling filesystem paths.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Use a dictionary to map file extensions to folder names (e.g., ` {".txt": "Text", ".jpg": "Images"} `).
+  Use a dictionary to map file extensions to folder names (e.g., `{".txt": "Text", ".jpg": "Images"}`).
 
     </details>
     <details><summary>Tip 4:</summary>
 
-    Remember to handle cases where a file has no extension or you want to ignore certain files/directories.
+  Remember to handle cases where a file has no extension or you want to ignore certain files/directories.
 
     </details>
 
 ### 18. Text Reverser
+
 - **Description**: Create a function that takes a string and returns it in reverse order.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/18_text_reverser.py
@@ -581,21 +601,22 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Python's string slicing is a very concise way to reverse a string: `my_string[::-1]`.
+  Python's string slicing is a very concise way to reverse a string: `my_string[::-1]`.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    You could also use a loop to iterate through the string from end to start and build the new string.
+  You could also use a loop to iterate through the string from end to start and build the new string.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Wrap your logic in a function to make it reusable.
+  Wrap your logic in a function to make it reusable.
 
     </details>
 
 ### 19. Simple Quiz Game
+
 - **Description**: Create a small program that asks multiple-choice questions from a predefined list and keeps score.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/19_simple_quiz_game.py
@@ -613,21 +634,22 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use a list of dictionaries to store your questions, where each dictionary contains the question, options, and the correct answer.
+  Use a list of dictionaries to store your questions, where each dictionary contains the question, options, and the correct answer.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use a `for` loop to iterate through your list of questions.
+  Use a `for` loop to iterate through your list of questions.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Keep track of the player's score in a variable that you increment for each correct answer.
+  Keep track of the player's score in a variable that you increment for each correct answer.
 
     </details>
 
 ### 20. Prime Number Generator
+
 - **Description**: Create a small program that finds and prints all prime numbers up to a user-specified limit.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/20_prime_number_generator.py
@@ -644,21 +666,22 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.
+  A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    To check if a number `n` is prime, you only need to check for divisors up to the square root of `n`.
+  To check if a number `n` is prime, you only need to check for divisors up to the square root of `n`.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Consider edge cases like 0, 1, and 2.
+  Consider edge cases like 0, 1, and 2.
 
     </details>
 
 ### 21. Fibonacci Sequence
+
 - **Description**: Create a function that generates the Fibonacci sequence up to a certain number of terms.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/21_fibonacci_sequence.py
@@ -674,21 +697,22 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    The Fibonacci sequence starts with 0 and 1. Each subsequent number is the sum of the two preceding ones (e.g., 0, 1, 1, 2, 3, 5, 8...).
+  The Fibonacci sequence starts with 0 and 1. Each subsequent number is the sum of the two preceding ones (e.g., 0, 1, 1, 2, 3, 5, 8...).
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use a loop and two variables to keep track of the last two numbers in the sequence to calculate the next one.
+  Use a loop and two variables to keep track of the last two numbers in the sequence to calculate the next one.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Handle edge cases, such as a user requesting 0 or 1 term.
+  Handle edge cases, such as a user requesting 0 or 1 term.
 
     </details>
 
 ### 22. Email Slicer
+
 - **Description**: A simple tool that takes an email address and extracts the username and domain name.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/22_email_slicer.py
 - **Steps**:
@@ -701,21 +725,22 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `input()` to get user input. The `.strip()` method is useful for removing leading/trailing whitespace.
+  Use `input()` to get user input. The `.strip()` method is useful for removing leading/trailing whitespace.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    String indexing (e.g., `email.index("@")`) can find the position of a specific character.
+  String indexing (e.g., `email.index("@")`) can find the position of a specific character.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Slicing (e.g., `my_string[:5]`) is a great way to extract parts of a string.
+  Slicing (e.g., `my_string[:5]`) is a great way to extract parts of a string.
 
     </details>
 
 ### 23. BMI Calculator
+
 - **Description**: A program that calculates a person's Body Mass Index (BMI) based on their height and weight.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/23_bmi_calculator.py
 - **Steps**:
@@ -728,21 +753,22 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use `float(input())` to convert user input into a number that can have decimal points.
+  Use `float(input())` to convert user input into a number that can have decimal points.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    The power operator in Python is `**`.
+  The power operator in Python is `**`.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Use `if/elif/else` statements to check the BMI range and provide the correct interpretation.
+  Use `if/elif/else` statements to check the BMI range and provide the correct interpretation.
 
     </details>
 
 ### 24. Currency Converter
+
 - **Description**: A simple tool to convert between a few currencies using fixed exchange rates.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/24_currency_converter.py
 - **Steps**:
@@ -755,17 +781,77 @@ These projects are ideal for those new to Python. Each project includes a descri
     </summary>
     <details><summary>Tip 1:</summary>
 
-    A dictionary is a great way to store the currency exchange rates.
+  A dictionary is a great way to store the currency exchange rates.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    To make the logic simpler, first convert the input amount to a common base currency (like USD), and then convert that base amount to the final target currency.
+  To make the logic simpler, first convert the input amount to a common base currency (like USD), and then convert that base amount to the final target currency.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Use the `.upper()` method on the currency input from the user to make the dictionary lookup case-insensitive.
+  Use the `.upper()` method on the currency input from the user to make the dictionary lookup case-insensitive.
+
+    </details>
+
+### 25. Task Tracker
+
+- **Description**: A simple command-line interface to add, view, and remove tasks from a list.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/25_task_tracker.py
+- **Steps**:
+  1. Create functions to add, view, and delete tasks.
+  2. Use a loop to keep the program running until the user exits.
+  3. Display a menu of options to the user.
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Use a list to store the tasks.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Use `enumerate()` to display the indices of the tasks for easier deletion.
+
+    </details>
+
+### 26. Unit Converter
+
+- **Description**: A tool to convert between different units of length (meters to feet) and weight (kilograms to pounds).
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/26_unit_converter.py
+- **Steps**:
+  1. Define conversion factors for different units.
+  2. Prompt the user for the value and units to convert.
+  3. Perform the conversion and display the result.
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Use a dictionary to store conversion factors relative to a base unit.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Use `float(input())` to handle decimal values.
+
+    </details>
+
+### 27. Leap Year Checker
+
+- **Description**: A program that determines if a given year is a leap year based on calendar rules.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/27_leap_year_checker.py
+- **Steps**:
+  1. Prompt the user for a year.
+  2. Apply the leap year logic (divisible by 4, but not by 100 unless divisible by 400).
+  3. Display the result.
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Use nested `if` statements or logical operators to check the conditions.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Remember that years like 1900 were not leap years, but 2000 was.
 
     </details>
 
@@ -773,9 +859,11 @@ These projects are ideal for those new to Python. Each project includes a descri
 > Working code solutions are in the `/Beginner` folder.
 
 ## Intermediate Projects
+
 These projects are ideal for those with experience in Python. Each project includes a description, steps to follow, and tips for completing it.
 
 ### 1. Tic Tac Toe
+
 - **Description**: Build a tic tac toe board, with it's own algorithm for winning and countering player moves.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/1_tic_tac_toe.py
@@ -790,21 +878,22 @@ These projects are ideal for those with experience in Python. Each project inclu
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use functions for repetitive tasks.
+  Use functions for repetitive tasks.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Create an algorithm that not only chooses certain priority positions on the board, but also counters player moves.
+  Create an algorithm that not only chooses certain priority positions on the board, but also counters player moves.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Add error handling and retries if a player chooses a place on the board that is already occupied.
+  Add error handling and retries if a player chooses a place on the board that is already occupied.
 
     </details>
 
 ### 2. Text-based Adventure Game
+
 - **Description**: An interactive fiction game where you can explore and make choices.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/2_adventure_game.py
 - **Steps**:
@@ -816,16 +905,17 @@ These projects are ideal for those with experience in Python. Each project inclu
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Use a dictionary to define the game world, with rooms, descriptions, and choices.
+  Use a dictionary to define the game world, with rooms, descriptions, and choices.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    Use a loop to keep the game running until the player reaches an end state.
+  Use a loop to keep the game running until the player reaches an end state.
 
     </details>
 
 ### 3. Sudoku Solver
+
 - **Description**: A program that can solve a partially completed Sudoku puzzle using a backtracking algorithm.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/3_sudoku_solver.py
@@ -842,21 +932,22 @@ These projects are ideal for those with experience in Python. Each project inclu
     </summary>
     <details><summary>Tip 1:</summary>
 
-    Backtracking involves trying a possibility, seeing if it leads to a solution, and if not, undoing it (backtracking) to try another.
+  Backtracking involves trying a possibility, seeing if it leads to a solution, and if not, undoing it (backtracking) to try another.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    A helper function like `is_valid(board, number, position)` is essential for checking the rules of Sudoku.
+  A helper function like `is_valid(board, number, position)` is essential for checking the rules of Sudoku.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    Recursion is a natural fit for this problem. The base case for the recursion is when the board has no empty cells left.
+  Recursion is a natural fit for this problem. The base case for the recursion is when the board has no empty cells left.
 
     </details>
 
 ### 4. Basic Sorting Algorithms
+
 - **Description**: Write your own functions to implement sorting algorithms like Bubble Sort, Selection Sort, or Insertion Sort.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/4_sorting_algorithms.py
@@ -873,21 +964,22 @@ These projects are ideal for those with experience in Python. Each project inclu
     </summary>
     <details><summary>Tip 1:</summary>
 
-    **Bubble Sort**: Repeatedly step through the list, compare adjacent elements, and swap them if they are in the wrong order.
+  **Bubble Sort**: Repeatedly step through the list, compare adjacent elements, and swap them if they are in the wrong order.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    **Selection Sort**: Repeatedly find the minimum element from the unsorted part and put it at the beginning.
+  **Selection Sort**: Repeatedly find the minimum element from the unsorted part and put it at the beginning.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    **Insertion Sort**: Build the final sorted array one item at a time, inserting each new item into its proper place.
+  **Insertion Sort**: Build the final sorted array one item at a time, inserting each new item into its proper place.
 
     </details>
 
 ### 5. Prime Number Sieve
+
 - **Description**: A program that uses the Sieve of Eratosthenes algorithm to efficiently find all prime numbers up to a given limit.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/5_prime_sieve.py
@@ -904,16 +996,17 @@ These projects are ideal for those with experience in Python. Each project inclu
     </summary>
     <details><summary>Tip 1:</summary>
 
-    The Sieve of Eratosthenes is much more efficient for finding all primes up to a limit than checking each number individually.
+  The Sieve of Eratosthenes is much more efficient for finding all primes up to a limit than checking each number individually.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    You only need to iterate your main loop up to `sqrt(limit)` because any composite number `n` will have a prime factor less than or equal to `sqrt(n)`.
+  You only need to iterate your main loop up to `sqrt(limit)` because any composite number `n` will have a prime factor less than or equal to `sqrt(n)`.
 
     </details>
 
 ### 6. Basic Caesar Cipher
+
 - **Description**: A program that can encrypt and decrypt a message using a simple shifting algorithm.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/6_caesar_cipher.py
@@ -931,17 +1024,77 @@ These projects are ideal for those with experience in Python. Each project inclu
     </summary>
     <details><summary>Tip 1:</summary>
 
-    The modulo operator (`%`) is perfect for handling the "wrap-around" logic for the alphabet. `(char_position + shift) % 26`.
+  The modulo operator (`%`) is perfect for handling the "wrap-around" logic for the alphabet. `(char_position + shift) % 26`.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-    The `string` module (`string.ascii_lowercase`, `string.ascii_uppercase`) can provide you with the alphabet, so you don't have to type it out yourself.
+  The `string` module (`string.ascii_lowercase`, `string.ascii_uppercase`) can provide you with the alphabet, so you don't have to type it out yourself.
 
     </details>
     <details><summary>Tip 3:</summary>
 
-    To decrypt, you can simply use the same function but with a negative shift key.
+  To decrypt, you can simply use the same function but with a negative shift key.
+
+    </details>
+
+### 7. Bank Account Simulator (OOP)
+
+- **Description**: An object-oriented project using classes to simulate basic banking operations like deposits, withdrawals, and balance checks.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/7_bank_account.py
+- **Steps**:
+  1. Define an `Account` class with attributes for owner and balance.
+  2. Implement methods for `deposit`, `withdraw`, and displaying account information.
+  3. Create a main loop to interact with the account.
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Use the `__init__` method to initialize account attributes.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  The `__str__` method is useful for defining how the object should be printed.
+
+    </details>
+
+### 8. File Metadata Extractor
+
+- **Description**: A script that recursively walks through a directory and lists file names, sizes, and modification dates.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/8_file_metadata.py
+- **Steps**:
+  1. Use the `os.walk()` function to traverse the directory tree.
+  2. Use `os.stat()` to retrieve metadata for each file.
+  3. Use the `time` module to format the modification date.
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  `os.path.join()` is the safest way to construct file paths across different operating systems.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  `time.ctime()` is a quick way to convert a timestamp into a human-readable string.
+
+    </details>
+
+### 9. CSV to JSON Converter
+
+- **Description**: A utility that reads data from a CSV file and converts it into a formatted JSON file.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/9_csv_to_json.py
+- **Steps**:
+  1. Use the `csv` module to read data from a CSV file.
+  2. Store the data in a list of dictionaries.
+  3. Use the `json` module to write the list to a JSON file with indentation.
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  `csv.DictReader` is perfect for automatically using the CSV header as keys for your dictionaries.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Setting `indent=4` in `json.dump()` makes the resulting JSON file much easier to read.
 
     </details>
 
@@ -949,7 +1102,9 @@ These projects are ideal for those with experience in Python. Each project inclu
 > Working code solutions are in the `/Intermediate` folder.
 
 ## Contributing
+
 Contributions are welcome! If you have project ideas or improvements, feel free to fork the repository and open a pull request.
 
 ## License
+
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
