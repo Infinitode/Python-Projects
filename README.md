@@ -11,10 +11,11 @@ This repository is designed to help Python learners at all levels, starting with
 ## Table of Contents
 
 1. [Setup](#setup)
-2. [Beginner Projects](#beginner-projects)
-3. [Intermediate Projects](#intermediate-projects)
-4. [Contributing](#contributing)
-5. [License](#license)
+2. [Project Difficulty Ratings](#project-difficulty-ratings)
+3. [Beginner Projects](#beginner-projects)
+4. [Intermediate Projects](#intermediate-projects)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 ## Setup
 
@@ -25,11 +26,54 @@ This repository is designed to help Python learners at all levels, starting with
 > [!TIP]
 > We use Visual Studio Code. It's fast, efficient, and has many extensions and customizability options.
 
+## Project Difficulty Ratings
+
+| Project | Category | Difficulty |
+| :--- | :--- | :--- |
+| [Calculator](#1-calculator) | Beginner | 1.5/10 |
+| [Number Guessing Game](#2-number-guessing-game) | Beginner | 2.0/10 |
+| [Password Generator](#3-password-generator) | Beginner | 2.5/10 |
+| [Tip Calculator](#4-tip-calculator) | Beginner | 1.5/10 |
+| [Temperature Converter](#5-temperature-converter) | Beginner | 1.5/10 |
+| [Palindrome Checker](#6-palindrome-checker) | Beginner | 1.5/10 |
+| [Word Counter](#7-word-counter) | Beginner | 2.0/10 |
+| [Text Encryption](#8-text-encryption) | Beginner | 2.5/10 |
+| [Countdown Timer](#9-countdown-timer) | Beginner | 2.5/10 |
+| [Rock Paper Scissors](#10-rock-paper-scissors) | Beginner | 2.5/10 |
+| [Mad Libs Generator](#11-mad-libs-generator) | Beginner | 2.0/10 |
+| [Dice Rolling Simulator](#12-dice-rolling-simulator) | Beginner | 1.5/10 |
+| [Hangman Game](#13-hangman-game) | Beginner | 3.5/10 |
+| [Address Book](#14-address-book) | Beginner | 4.0/10 |
+| [Pomodoro Timer](#15-pomodoro-timer) | Beginner | 3.0/10 |
+| [Budget Tracker](#16-budget-tracker) | Beginner | 4.5/10 |
+| [File Sorter](#17-file-sorter) | Beginner | 3.5/10 |
+| [Text Reverser](#18-text-reverser) | Beginner | 1.0/10 |
+| [Simple Quiz Game](#19-simple-quiz-game) | Beginner | 2.5/10 |
+| [Prime Number Generator](#20-prime-number-generator) | Beginner | 2.5/10 |
+| [Fibonacci Sequence](#21-fibonacci-sequence) | Beginner | 2.0/10 |
+| [Email Slicer](#22-email-slicer) | Beginner | 1.5/10 |
+| [BMI Calculator](#23-bmi-calculator) | Beginner | 1.5/10 |
+| [Currency Converter](#24-currency-converter) | Beginner | 2.5/10 |
+| [Task Tracker](#25-task-tracker) | Beginner | 3.0/10 |
+| [Unit Converter](#26-unit-converter) | Beginner | 2.5/10 |
+| [Leap Year Checker](#27-leap-year-checker) | Beginner | 1.5/10 |
+| [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
+| [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
+| [Sudoku Solver](#3-sudoku-solver) | Intermediate | 8.5/10 |
+| [Basic Sorting Algorithms](#4-basic-sorting-algorithms) | Intermediate | 6.5/10 |
+| [Prime Number Sieve](#5-prime-number-sieve) | Intermediate | 5.0/10 |
+| [Basic Caesar Cipher](#6-basic-caesar-cipher) | Intermediate | 4.5/10 |
+| [Bank Account Simulator (OOP)](#7-bank-account-simulator-oop) | Intermediate | 5.5/10 |
+| [File Metadata Extractor](#8-file-metadata-extractor) | Intermediate | 5.0/10 |
+| [CSV to JSON Converter](#9-csv-to-json-converter) | Intermediate | 4.5/10 |
+
 ## Beginner Projects
 
 These projects are ideal for those new to Python. Each project includes a description, steps to follow, and tips for completing it.
 
 ### 1. Calculator
+
+- **Difficulty**: 1.5/10
 
 - **Description**: Build a simple calculator that performs basic arithmetic operations (`+`, `-`, `*`, `/`).
 
@@ -63,6 +107,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 2. Number Guessing Game
+
+- **Difficulty**: 2.0/10
 
 - **Description**: Build a simple random number generator, where users have to submit their guesses as to what the number is. Accept a range within 10 of the random number. `[0 - 100]`
 
@@ -98,6 +144,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 3. Password Generator
 
+- **Difficulty**: 2.5/10
+
 - **Description**: Build a simple password generator than can generate custom length passwords, from 8 up to 128 characters. Use uppercase, lowercase, symbols, and numbers.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/3_password_generator.py
@@ -132,6 +180,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 4. Tip Calculator
 
+- **Difficulty**: 1.5/10
+
 - **Description**: Build a simple tip calculator, that calculates the tip based on the total and the desired percentage with splits.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/4_tip_calculator.py
@@ -163,6 +213,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 5. Temperature Converter
+
+- **Difficulty**: 1.5/10
 
 - **Description**: Build a simple temperature converter that converts between Celsius and Fahrenheit.
 
@@ -196,6 +248,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 6. Palindrome Checker
 
+- **Difficulty**: 1.5/10
+
 - **Description**: Build a simple palindrome checker.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/6_palindrome_checker.py
@@ -226,6 +280,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 7. Word Counter
+
+- **Difficulty**: 2.0/10
 
 - **Description**: Build a simple word counter.
 
@@ -263,6 +319,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 8. Text Encryption
 
+- **Difficulty**: 2.5/10
+
 - **Description**: Create a text encryption function with decryption as well.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/8_text_encryption.py
@@ -298,6 +356,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 9. Countdown Timer
+
+- **Difficulty**: 2.5/10
 
 - **Description**: Create a countdown timer for seconds and minutes.
 
@@ -335,6 +395,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 10. Rock Paper Scissors
 
+- **Difficulty**: 2.5/10
+
 - **Description**: Create a rock paper scissors game.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/10_rock_paper_scissors.py
@@ -370,6 +432,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 11. Mad Libs Generator
+
+- **Difficulty**: 2.0/10
 
 - **Description**: Create a Mad Libs generator.
 
@@ -407,6 +471,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 12. Dice Rolling Simulator
 
+- **Difficulty**: 1.5/10
+
 - **Description**: Create a dice rolling simulator.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/12_dice_rolling_simulator.py
@@ -441,6 +507,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 13. Hangman Game
+
+- **Difficulty**: 3.5/10
 
 - **Description**: Implement the classic Hangman game where the player guesses letters to reveal a hidden word.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/13_hangman_game.py
@@ -483,6 +551,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 14. Address Book
 
+- **Difficulty**: 4.0/10
+
 - **Description**: A simple command-line contact manager.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/14_address_book.py
 - **Steps**:
@@ -504,6 +574,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 15. Pomodoro Timer
+
+- **Difficulty**: 3.0/10
 
 - **Description**: A time management tool to help you stay focused.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/15_pomodoro_timer.py
@@ -527,6 +599,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 16. Budget Tracker
 
+- **Difficulty**: 4.5/10
+
 - **Description**: A tool to track your income and expenses.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/16_budget_tracker.py
 - **Steps**:
@@ -548,6 +622,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 17. File Sorter
+
+- **Difficulty**: 3.5/10
 
 - **Description**: Create a script that organizes files in a directory into subfolders based on their file type (e.g., .txt files go into a "Text" folder, .jpg files go into an "Images" folder).
 
@@ -587,6 +663,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 18. Text Reverser
 
+- **Difficulty**: 1.0/10
+
 - **Description**: Create a function that takes a string and returns it in reverse order.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/18_text_reverser.py
@@ -617,6 +695,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 19. Simple Quiz Game
+
+- **Difficulty**: 2.5/10
 
 - **Description**: Create a small program that asks multiple-choice questions from a predefined list and keeps score.
 
@@ -651,6 +731,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 20. Prime Number Generator
 
+- **Difficulty**: 2.5/10
+
 - **Description**: Create a small program that finds and prints all prime numbers up to a user-specified limit.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/20_prime_number_generator.py
@@ -683,6 +765,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 21. Fibonacci Sequence
 
+- **Difficulty**: 2.0/10
+
 - **Description**: Create a function that generates the Fibonacci sequence up to a certain number of terms.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/21_fibonacci_sequence.py
@@ -714,6 +798,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 22. Email Slicer
 
+- **Difficulty**: 1.5/10
+
 - **Description**: A simple tool that takes an email address and extracts the username and domain name.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/22_email_slicer.py
 - **Steps**:
@@ -741,6 +827,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 23. BMI Calculator
+
+- **Difficulty**: 1.5/10
 
 - **Description**: A program that calculates a person's Body Mass Index (BMI) based on their height and weight.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/23_bmi_calculator.py
@@ -770,6 +858,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 24. Currency Converter
 
+- **Difficulty**: 2.5/10
+
 - **Description**: A simple tool to convert between a few currencies using fixed exchange rates.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/24_currency_converter.py
 - **Steps**:
@@ -798,6 +888,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 25. Task Tracker
 
+- **Difficulty**: 3.0/10
+
 - **Description**: A simple command-line interface to add, view, and remove tasks from a list.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/25_task_tracker.py
 - **Steps**:
@@ -818,6 +910,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 ### 26. Unit Converter
 
+- **Difficulty**: 2.5/10
+
 - **Description**: A tool to convert between different units of length (meters to feet) and weight (kilograms to pounds).
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/26_unit_converter.py
 - **Steps**:
@@ -837,6 +931,8 @@ These projects are ideal for those new to Python. Each project includes a descri
     </details>
 
 ### 27. Leap Year Checker
+
+- **Difficulty**: 1.5/10
 
 - **Description**: A program that determines if a given year is a leap year based on calendar rules.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/27_leap_year_checker.py
@@ -864,6 +960,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 These projects are ideal for those with experience in Python. Each project includes a description, steps to follow, and tips for completing it.
 
 ### 1. Tic Tac Toe
+
+- **Difficulty**: 6.0/10
 
 - **Description**: Build a tic tac toe board, with it's own algorithm for winning and countering player moves.
 
@@ -895,6 +993,8 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 ### 2. Text-based Adventure Game
 
+- **Difficulty**: 5.5/10
+
 - **Description**: An interactive fiction game where you can explore and make choices.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/2_adventure_game.py
 - **Steps**:
@@ -916,6 +1016,8 @@ These projects are ideal for those with experience in Python. Each project inclu
     </details>
 
 ### 3. Sudoku Solver
+
+- **Difficulty**: 8.5/10
 
 - **Description**: A program that can solve a partially completed Sudoku puzzle using a backtracking algorithm.
 
@@ -949,6 +1051,8 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 ### 4. Basic Sorting Algorithms
 
+- **Difficulty**: 6.5/10
+
 - **Description**: Write your own functions to implement sorting algorithms like Bubble Sort, Selection Sort, or Insertion Sort.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/4_sorting_algorithms.py
@@ -981,6 +1085,8 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 ### 5. Prime Number Sieve
 
+- **Difficulty**: 5.0/10
+
 - **Description**: A program that uses the Sieve of Eratosthenes algorithm to efficiently find all prime numbers up to a given limit.
 
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/5_prime_sieve.py
@@ -1007,6 +1113,8 @@ These projects are ideal for those with experience in Python. Each project inclu
     </details>
 
 ### 6. Basic Caesar Cipher
+
+- **Difficulty**: 4.5/10
 
 - **Description**: A program that can encrypt and decrypt a message using a simple shifting algorithm.
 
@@ -1041,6 +1149,8 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 ### 7. Bank Account Simulator (OOP)
 
+- **Difficulty**: 5.5/10
+
 - **Description**: An object-oriented project using classes to simulate basic banking operations like deposits, withdrawals, and balance checks.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/7_bank_account.py
 - **Steps**:
@@ -1061,6 +1171,8 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 ### 8. File Metadata Extractor
 
+- **Difficulty**: 5.0/10
+
 - **Description**: A script that recursively walks through a directory and lists file names, sizes, and modification dates.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/8_file_metadata.py
 - **Steps**:
@@ -1080,6 +1192,8 @@ These projects are ideal for those with experience in Python. Each project inclu
     </details>
 
 ### 9. CSV to JSON Converter
+
+- **Difficulty**: 4.5/10
 
 - **Description**: A utility that reads data from a CSV file and converts it into a formatted JSON file.
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/9_csv_to_json.py
