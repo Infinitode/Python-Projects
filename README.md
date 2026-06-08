@@ -4,8 +4,8 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
-**Total Projects:** 36
-**Total Beginner Projects:** 27
+**Total Projects:** 39
+**Total Beginner Projects:** 30
 **Total Intermediate Projects:** 9
 
 ## Table of Contents
@@ -57,6 +57,9 @@ This repository is designed to help Python learners at all levels, starting with
 | [Task Tracker](#25-task-tracker) | Beginner | 3.0/10 |
 | [Unit Converter](#26-unit-converter) | Beginner | 2.5/10 |
 | [Leap Year Checker](#27-leap-year-checker) | Beginner | 1.5/10 |
+| [Odd or Even Checker](#28-odd-or-even-checker) | Beginner | 0.5/10 |
+| [Multiplication Table Generator](#29-multiplication-table-generator) | Beginner | 0.5/10 |
+| [Simple Interest Calculator](#30-simple-interest-calculator) | Beginner | 0.5/10 |
 | [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
 | [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
 | [Sudoku Solver](#3-sudoku-solver) | Intermediate | 8.5/10 |
@@ -949,6 +952,81 @@ These projects are ideal for those new to Python. Each project includes a descri
     <details><summary>Tip 2:</summary>
 
   Remember that years like 1900 were not leap years, but 2000 was.
+
+    </details>
+
+### 28. Odd or Even Checker
+
+- **Difficulty**: 0.5/10
+
+- **Description**: Build a simple program that checks if a user-provided number is odd or even.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/28_odd_or_even.py
+
+- **Steps**:
+  1. Prompt the user for a number.
+  2. Use the modulo operator (%) to check the remainder when divided by 2.
+  3. Display whether the number is odd or even.
+
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Use `input()` to get user input and `int()` to convert it to an integer.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  A number is even if `number % 2 == 0`, otherwise it is odd.
+
+    </details>
+
+### 29. Multiplication Table Generator
+
+- **Difficulty**: 0.5/10
+
+- **Description**: Build a program that generates a multiplication table for a given number.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/29_multiplication_table.py
+
+- **Steps**:
+  1. Prompt the user for a number.
+  2. Prompt the user for the range of the table (default to 10).
+  3. Use a loop to calculate and display the multiplication results.
+
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Use a `for` loop with `range()` to iterate through the table.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  You can use f-strings to format the output nicely: `print(f"{number} x {i} = {number * i}")`.
+
+    </details>
+
+### 30. Simple Interest Calculator
+
+- **Difficulty**: 0.5/10
+
+- **Description**: Build a simple interest calculator that takes principal, rate, and time as input.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/30_simple_interest_calculator.py
+
+- **Steps**:
+  1. Prompt the user for the principal amount, interest rate, and time in years.
+  2. Use the formula `(P * R * T) / 100` to calculate simple interest.
+  3. Display the calculated interest and the total amount.
+
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Use `float(input())` to handle decimal values for currency and rates.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Remember that the rate is usually expressed as a percentage, so divide by 100 in your formula.
 
     </details>
 
