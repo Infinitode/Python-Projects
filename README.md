@@ -4,9 +4,9 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
-**Total Projects:** 39
-**Total Beginner Projects:** 30
-**Total Intermediate Projects:** 9
+**Total Projects:** 42
+**Total Beginner Projects:** 32
+**Total Intermediate Projects:** 10
 
 ## Table of Contents
 
@@ -60,6 +60,8 @@ This repository is designed to help Python learners at all levels, starting with
 | [Odd or Even Checker](#28-odd-or-even-checker) | Beginner | 0.5/10 |
 | [Multiplication Table Generator](#29-multiplication-table-generator) | Beginner | 0.5/10 |
 | [Simple Interest Calculator](#30-simple-interest-calculator) | Beginner | 0.5/10 |
+| [Anagram Checker](#31-anagram-checker) | Beginner | 1.0/10 |
+| [Acronym Generator](#32-acronym-generator) | Beginner | 1.0/10 |
 | [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
 | [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
 | [Sudoku Solver](#3-sudoku-solver) | Intermediate | 8.5/10 |
@@ -69,6 +71,7 @@ This repository is designed to help Python learners at all levels, starting with
 | [Bank Account Simulator (OOP)](#7-bank-account-simulator-oop) | Intermediate | 5.5/10 |
 | [File Metadata Extractor](#8-file-metadata-extractor) | Intermediate | 5.0/10 |
 | [CSV to JSON Converter](#9-csv-to-json-converter) | Intermediate | 4.5/10 |
+| [Fractal Creator](#10-fractal-creator) | Intermediate | 6.5/10 |
 
 ## Beginner Projects
 
@@ -1030,6 +1033,58 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
+### 31. Anagram Checker
+
+- **Difficulty**: 1.0/10
+
+- **Description**: Build a simple anagram checker that checks if two words or phrases are anagrams of each other.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/31_anagram_checker.py
+
+- **Steps**:
+  1. Prompt the user for two words or phrases.
+  2. Process and sanitize both inputs (remove spaces, convert to lowercase).
+  3. Check if the sorted characters of both strings are equal.
+  4. Display the result.
+
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Use string cleaning techniques such as `.split()` and `.join()` to strip out all whitespaces.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Use the built-in `sorted()` function in Python to sort the characters of each string.
+
+    </details>
+
+### 32. Acronym Generator
+
+- **Difficulty**: 1.0/10
+
+- **Description**: Build a simple acronym generator that takes a phrase and extracts the first letter of each word to form an acronym.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/32_acronym_generator.py
+
+- **Steps**:
+  1. Prompt the user for a phrase.
+  2. Split the phrase into individual words.
+  3. Extract the first letter of each alphabetic word and convert it to uppercase.
+  4. Display the generated acronym.
+
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Use the `.split()` method on a string to break it up into a list of words.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Use `.isalpha()` to ensure you only extract acronym letters from words starting with alphabet characters.
+
+    </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
@@ -1288,6 +1343,29 @@ These projects are ideal for those with experience in Python. Each project inclu
     <details><summary>Tip 2:</summary>
 
   Setting `indent=4` in `json.dump()` makes the resulting JSON file much easier to read.
+
+    </details>
+
+### 10. Fractal Creator
+
+- **Difficulty**: 6.5/10
+
+- **Description**: A program that generates fractal patterns (such as the Mandelbrot Set or Sierpinski Triangle) using terminal text output (ASCII art) with interactive options.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/10_fractal_creator.py
+- **Steps**:
+  1. Present the user with fractal options (Mandelbrot or Sierpinski).
+  2. Get custom parameters from the user (such as dimensions or max iterations).
+  3. Generate the fractal points using complex numbers or bitwise logic.
+  4. Display the completed fractal structure in the terminal using characters.
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  The Mandelbrot set operates over a grid of complex coordinates. Keep track of how real and imaginary parts map to row and column offsets.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Bitwise calculations like `x & (y - x)` are an elegant way to determine Sierpinski coordinates.
 
     </details>
 
