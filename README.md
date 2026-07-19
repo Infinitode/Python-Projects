@@ -74,7 +74,7 @@ This repository is designed to help Python learners at all levels, starting with
 | [File Metadata Extractor](#8-file-metadata-extractor) | Intermediate | 5.0/10 |
 | [CSV to JSON Converter](#9-csv-to-json-converter) | Intermediate | 4.5/10 |
 | [Fractal Creator](#10-fractal-creator) | Intermediate | 6.5/10 |
-| [File explorer](#43-file-explorer) | Intermediate | 6.5/10 |
+| [File Explorer](#11-file-explorer) | Intermediate | 6.5/10 |
 
 ## Beginner Projects
 
@@ -1372,25 +1372,25 @@ These projects are ideal for those with experience in Python. Each project inclu
 
     </details>
 
-### 43. File explorer
+### 11. File explorer
 
 - **Difficulty**: 6.5/10
-- **Description**: File viewer with ability to go to folders
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/43_file_explorer.py (If it's not there, try https://github.com/Ericwasepic127/Python-Projects/blob/main/Intermediate/43_file_explorer.py)
+- **Description**: CLI file explorer with navigation.
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/11_file_explorer.py. Original contribution: https://github.com/Ericwasepic127/Python-Projects/blob/main/Intermediate/43_file_explorer.py
 - **Steps**:
-  1. Use os module for list items in current directory and get current directory
-  2. Use while loop for always ask for where to go
-  3. Print back what's inside with sorting by files and folders
-  4. Create input asking for where to next to go from filtered folders
+  1. Use the os module to list items in the current directory and get the current directory.
+  2. Use a while loop to prompt for where to go.
+  3. Print back what's inside, with sorting by files and folders.
+  4. Create an input asking where to go next from the filtered folders.
 - **Tips:**
     <details><summary>Tip 1:</summary>
 
-  `os.listdir` returns list that has all files & folders has in current or given (`os.listdir("/path/")`) directory.
+  `os.listdir` returns a list that has all files & folders in the current or given (`os.listdir("/path/")`) directory.
 
     </details>
     <details><summary>Tip 2:</summary>
 
-  `os.path.isfile` determines is it file or not, if it's file, it returns True, if not, False returns.
+  `os.path.isfile` determines whether it file or not; if it is a file, it returns `True`; if not, return `False`.
 
     </details>
     
