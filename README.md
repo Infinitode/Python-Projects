@@ -25,7 +25,7 @@ This repository is designed to help Python learners at all levels, starting with
 
 - Ensure you have an IDE or a place where you can code and run the Python interpreter.
 
-- See also to our [installing guide](INSTALLING.md) for install python by step by step.
+- See the [Python & VS Code Installation Guide](INSTALLING.md) to install python by step by step. Visual Studio Code installation steps are also included in this.
 
 > [!TIP]
 > We use Visual Studio Code. It's fast, efficient, and has many extensions and customizability options.
