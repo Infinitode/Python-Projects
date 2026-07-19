@@ -53,6 +53,7 @@ Open your terminal and run the appropriate command for your package manager to i
   sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
 ```
 
+
 * **Fedora / RHEL / CentOS:**
    ```bash
    sudo dnf groupinstall "Development Tools"
