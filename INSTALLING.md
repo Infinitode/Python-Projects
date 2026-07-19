@@ -51,38 +51,38 @@ Open your terminal and run the appropriate command for your package manager to i
   ```bash
   sudo apt update
   sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
-
 ```
- * **Fedora / RHEL / CentOS:**
+
+* **Fedora / RHEL / CentOS:**
    ```bash
    sudo dnf groupinstall "Development Tools"
-   sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel
-   
+   sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel  
    ```
- * **Arch Linux:**
+
+* **Arch Linux:**
    ```bash
    sudo pacman -S --needed base-devel
    sudo pacman -S git openssl zlib bzip2 readline sqlite3 libffi xz tk
-   
    ```
 ### 2. Install and Configure pyenv
  1. Run the automatic installer script:
    ```bash
    curl [https://pyenv.run](https://pyenv.run) | bash
-   
    ```
- 2. Follow the instructions printed in the terminal to add pyenv to your shell profile configurations (e.g., .bashrc or .zshrc).
- 3. Restart your terminal or source your profile to apply the changes.
+2. Follow the instructions printed in the terminal to add pyenv to your shell profile configurations (e.g., .bashrc or .zshrc).
+3. Restart your terminal or source your profile to apply the changes.
+
 ### 3. Install Python
 Install your desired version using pyenv. We recommend version 3.13:
 ```bash
 pyenv install 3.13
 pyenv global 3.13
-
 ```
+
 ## Visual Studio Code Installation
 Get your development environment ready by installing Visual Studio Code for your platform:
  * **Windows:** Download via the Microsoft Store Link.
  * **macOS:** Follow the official macOS Setup Guide.
  * **Linux:** Follow the official Linux Setup Guide for .deb, .rpm, or Snap packages.
+
 <sub>Contributed by @Ericwasepic127</sub>
