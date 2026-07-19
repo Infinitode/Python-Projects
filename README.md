@@ -5,8 +5,10 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
 **Total Projects:** 43
+---
 **Total Beginner Projects:** 32
-**Total Intermediate Projects:** 10
+
+**Total Intermediate Projects:** 11
 
 ## Table of Contents
 
