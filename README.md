@@ -1374,7 +1374,7 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 - **Difficulty**: 6.5/10
 - **Description**: File viewer with ability to go to folders
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/31_file_explorer.py (If it's not there, try https://github.com/Ericwasepic127/Python-Projects/blob/main/Intermediate/31_file_explorer.py)
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/43_file_explorer.py (If it's not there, try https://github.com/Ericwasepic127/Python-Projects/blob/main/Intermediate/43_file_explorer.py)
 - **Steps**:
   1. Use os module for list items in current directory and get current directory
   2. Use while loop for always ask for where to go
