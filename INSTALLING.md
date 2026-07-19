@@ -50,15 +50,13 @@ Open your terminal and run the appropriate command for your package manager to i
 * **Ubuntu / Debian / Mint:**
   ```bash
   sudo apt update
-  sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
-```
+  sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev```
 
 
 * **Fedora / RHEL / CentOS:**
    ```bash
    sudo dnf groupinstall "Development Tools"
-   sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel  
-   ```
+   sudo dnf install git openssl-devel bzip2-devel libffi-devel readline-devel sqlite-devel xz-devel tk-devel```
 
 * **Arch Linux:**
    ```bash
