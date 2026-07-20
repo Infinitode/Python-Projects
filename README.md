@@ -1091,32 +1091,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
-### 44. File viewer
-- **Difficulty**: 4.5/10
-- **Description**: Get filename from user, and print user's file contents. Avoid any crashes! Don't forget it must be infinte loop
-- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/44_file_viewer.py - [Original](https://github.com/Ericwasepic127/Python-Projects/blob/main/Beginner/44_file_viewer.py)
-- **Steps**:
-  1. Ask for filename
-  2. Check does file exists: If doesn't exists, show user as File Not Found. Handle it for directories too
-  3. Read the file. If it encourtes permission error, notify user as operation not permitted
-  4. Repeat back to 1, unless user clicks Ctrl-C (KeyboardInterrupt, SIGINT) or type `exit` at filename section
-- **Tips:**:
-    <details><summary>Tip 1:</summary>
-
-  Make reusable function for it so it makes easier
-
-    </details>
-    <details><summary>Tip 2:</summary>
-
-  Use `os.path.isfile` to check your file exists and it's not directory 
-
-    </details>
-        <details><summary>Tip 3:</summary>
-
-  Use `open` to handle file operation. It raises exception `PermissionError` when permission failed. Use `try/except` to catch and show user as operation not permitted
-
-    </details>
-
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
@@ -1422,6 +1396,34 @@ These projects are ideal for those with experience in Python. Each project inclu
   `os.path.isfile` determines whether it file or not; if it is a file, it returns `True`; if not, return `False`.
 
     </details>
+
+### 12. File viewer
+- **Difficulty**: 4.5/10
+- **Description**: Prompt the user for a filename and print the contents of the specified file. Ensure the program handles errors gracefully to avoid crashes. The program should run in an infinite loop until the user decides to exit.
+- **Solution**: [GitHub Repository](https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/12_file_viewer.py) - [Original Source](https://github.com/Ericwasepic127/Python-Projects/blob/main/Beginner/44_file_viewer.py)
+- **Steps**:
+  1. Prompt the user for a filename.
+  2. Check if the file exists: If it does not exist, inform the user with a "File Not Found" message. Ensure to check for directories as well.
+  3. Attempt to read the file. If a permission error occurs, notify the user with an "Operation Not Permitted" message.
+  4. Repeat the process by returning to step 1, unless the user presses Ctrl-C (KeyboardInterrupt, SIGINT) or types "exit" when prompted for the filename.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+  
+  Create a reusable function to streamline the code and enhance readability.
+  
+  </details>
+  
+  <details><summary>Tip 2:</summary>
+  
+  Utilize `os.path.isfile` to verify that the file exists and is not a directory.
+  
+  </details>
+  
+  <details><summary>Tip 3:</summary>
+  
+  Use the `open` function for file operations. Note that it raises a `PermissionError` when access is denied. Implement try/except blocks to catch this exception and inform the user accordingly.
+  
+  </details>
     
 
 > [!NOTE]
