@@ -4,9 +4,9 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
-**Total Projects:** 43
+**Total Projects:** 44
 ---
-**Total Beginner Projects:** 32
+**Total Beginner Projects:** 33
 
 **Total Intermediate Projects:** 11
 
@@ -66,6 +66,7 @@ This repository is designed to help Python learners at all levels, starting with
 | [Simple Interest Calculator](#30-simple-interest-calculator) | Beginner | 0.5/10 |
 | [Anagram Checker](#31-anagram-checker) | Beginner | 1.0/10 |
 | [Acronym Generator](#32-acronym-generator) | Beginner | 1.0/10 |
+| [File viewer](#44-file-viewer) | Beginner | 4.5/10 |
 | [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
 | [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
 | [Sudoku Solver](#3-sudoku-solver) | Intermediate | 8.5/10 |
@@ -1087,6 +1088,32 @@ These projects are ideal for those new to Python. Each project includes a descri
     <details><summary>Tip 2:</summary>
 
   Use `.isalpha()` to ensure you only extract acronym letters from words starting with alphabet characters.
+
+    </details>
+
+### 44. File viewer
+- **Difficulty**: 4.5/10
+- **Description**: Get filename from user, and print user's file contents. Avoid any crashes! Don't forget it must be infinte loop
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/44_file_viewer.py - [Original](https://github.com/Ericwasepic127/Python-Projects/blob/main/Beginner/44_file_viewer.py)
+- **Steps**:
+  1. Ask for filename
+  2. Check does file exists: If doesn't exists, show user as File Not Found. Handle it for directories too
+  3. Read the file. If it encourtes permission error, notify user as operation not permitted
+  4. Repeat back to 1, unless user clicks Ctrl-C (KeyboardInterrupt, SIGINT) or type `exit` at filename section
+- **Tips:**:
+    <details><summary>Tip 1:</summary>
+
+  Make reusable function for it so it makes easier
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Use `os.path.isfile` to check your file exists and it's not directory 
+
+    </details>
+        <details><summary>Tip 3:</summary>
+
+  Use `open` to handle file operation. It raises exception `PermissionError` when permission failed. Use `try/except` to catch and show user as operation not permitted
 
     </details>
 
