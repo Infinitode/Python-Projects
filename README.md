@@ -66,7 +66,6 @@ This repository is designed to help Python learners at all levels, starting with
 | [Simple Interest Calculator](#30-simple-interest-calculator) | Beginner | 0.5/10 |
 | [Anagram Checker](#31-anagram-checker) | Beginner | 1.0/10 |
 | [Acronym Generator](#32-acronym-generator) | Beginner | 1.0/10 |
-| [File viewer](#44-file-viewer) | Beginner | 4.5/10 |
 | [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
 | [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
 | [Sudoku Solver](#3-sudoku-solver) | Intermediate | 8.5/10 |
@@ -78,6 +77,8 @@ This repository is designed to help Python learners at all levels, starting with
 | [CSV to JSON Converter](#9-csv-to-json-converter) | Intermediate | 4.5/10 |
 | [Fractal Creator](#10-fractal-creator) | Intermediate | 6.5/10 |
 | [File Explorer](#11-file-explorer) | Intermediate | 6.5/10 |
+| [File Viewer](#12-file-viewer) | Intermediate | 4.5/10 |
+
 
 ## Beginner Projects
 
