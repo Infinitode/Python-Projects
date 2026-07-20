@@ -6,9 +6,9 @@ This repository is designed to help Python learners at all levels, starting with
 
 **Total Projects:** 44
 ---
-**Total Beginner Projects:** 33
+**Total Beginner Projects:** 32
 
-**Total Intermediate Projects:** 11
+**Total Intermediate Projects:** 12
 
 ## Table of Contents
 
