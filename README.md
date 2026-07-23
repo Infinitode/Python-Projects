@@ -33,16 +33,17 @@ This repository is designed to help Python learners at all levels, starting with
 ## Project Difficulty Ratings
 
 | *Project* | *Category* | *Difficulty* |
-| :--- | :--- | :--- |
-| **Project name** | ***Beginner** level* | Rating: 0.5 |
+| :-- | :-- | :-- |
+| ***Beginner** projects* | *Beginner* | ***Rating: 0.5~4.5*** |
+| **Project name** | ***Beginner** level* | *Rating: **0.5*** |
 | [Odd or Even Checker](#28-odd-or-even-checker) | Beginner | 0.5/10 |
 | [Multiplication Table Generator](#29-multiplication-table-generator) | Beginner | 0.5/10 |
 | [Simple Interest Calculator](#30-simple-interest-calculator) | Beginner | 0.5/10 |
-| **Project name** | ***Beginner** level* | Rating: 1.0 |
+| **Project name** | ***Beginner** level* | *Rating: **1.0*** |
 | [Anagram Checker](#31-anagram-checker) | Beginner | 1.0/10 |
 | [Acronym Generator](#32-acronym-generator) | Beginner | 1.0/10 |
 | [Text Reverser](#18-text-reverser) | Beginner | 1.0/10 |
-| **Project name** | ***Beginner** level* | Rating: 1.5 |
+| **Project name** | ***Beginner** level* | *Rating: **1.5*** |
 | [Calculator](#1-calculator) | Beginner | 1.5/10 |
 | [Tip Calculator](#4-tip-calculator) | Beginner | 1.5/10 |
 | [Temperature Converter](#5-temperature-converter) | Beginner | 1.5/10 |
@@ -51,12 +52,12 @@ This repository is designed to help Python learners at all levels, starting with
 | [Email Slicer](#22-email-slicer) | Beginner | 1.5/10 |
 | [BMI Calculator](#23-bmi-calculator) | Beginner | 1.5/10 |
 | [Leap Year Checker](#27-leap-year-checker) | Beginner | 1.5/10 |
-| **Project name** | ***Beginner** level* | Rating: 2.0 |
+| **Project name** | ***Beginner** level* | *Rating: **2.0*** |
 | [Number Guessing Game](#2-number-guessing-game) | Beginner | 2.0/10 |
 | [Word Counter](#7-word-counter) | Beginner | 2.0/10 |
 | [Mad Libs Generator](#11-mad-libs-generator) | Beginner | 2.0/10 |
 | [Fibonacci Sequence](#21-fibonacci-sequence) | Beginner | 2.0/10 |
-| **Project name** | ***Beginner** level* | Rating: 2.5 |
+| **Project name** | ***Beginner** level* | *Rating: **2.5*** |
 | [Password Generator](#3-password-generator) | Beginner | 2.5/10 |
 | [Text Encryption](#8-text-encryption) | Beginner | 2.5/10 |
 | [Countdown Timer](#9-countdown-timer) | Beginner | 2.5/10 |
@@ -65,34 +66,34 @@ This repository is designed to help Python learners at all levels, starting with
 | [Prime Number Generator](#20-prime-number-generator) | Beginner | 2.5/10 |
 | [Unit Converter](#26-unit-converter) | Beginner | 2.5/10 |
 | [Currency Converter](#24-currency-converter) | Beginner | 2.5/10 |
-| **Project name** | ***Beginner** level* | Rating: 3.0 |
+| **Project name** | ***Beginner** level* | *Rating: **3.0*** |
 | [Pomodoro Timer](#15-pomodoro-timer) | Beginner | 3.0/10 |
 | [Task Tracker](#25-task-tracker) | Beginner | 3.0/10 |
-| **Project name** | ***Beginner** level* | Rating: 3.5 |
+| **Project name** | ***Beginner** level* | *Rating: **3.5*** |
 | [Hangman Game](#13-hangman-game) | Beginner | 3.5/10 |
 | [File Sorter](#17-file-sorter) | Beginner | 3.5/10 |
-| **Project name** | ***Beginner** level* | Rating: 4.0 |
+| **Project name** | ***Beginner** level* | *Rating: **4.0*** |
 | [Address Book](#14-address-book) | Beginner | 4.0/10 |
-| **Project name** | ***Beginner** level* | Rating: 4.5 |
+| **Project name** | ***Beginner** level* | *Rating: **4.5*** |
 | [Budget Tracker](#16-budget-tracker) | Beginner | 4.5/10 |
 | [File viewer](#44-file-viewer) | Beginner | 4.5/10 |
-| :--- | :--- | :--- |
-| **Project name** | ***Intermediate** level* | Rating: 4.5 |
+| ***Intermediate** projects* | *Intermediate* | ***Rating: 4.5~8.5*** |
+| **Project name** | ***Intermediate** level* | *Rating: **4.5*** |
 | [Basic Caesar Cipher](#6-basic-caesar-cipher) | Intermediate | 4.5/10 |
 | [CSV to JSON Converter](#9-csv-to-json-converter) | Intermediate | 4.5/10 |
-| **Project name** | ***Intermediate** level* | Rating: 5.0 |
+| **Project name** | ***Intermediate** level* | *Rating: **5.0*** |
 | [Prime Number Sieve](#5-prime-number-sieve) | Intermediate | 5.0/10 |
 | [File Metadata Extractor](#8-file-metadata-extractor) | Intermediate | 5.0/10 |
-| **Project name** | ***Intermediate** level* | Rating: 5.5 |
+| **Project name** | ***Intermediate** level* | *Rating: **5.5*** |
 | [Bank Account Simulator (OOP)](#7-bank-account-simulator-oop) | Intermediate | 5.5/10 |
 | [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
-| **Project name** | ***Intermediate** level* | Rating: 6.0 |
+| **Project name** | ***Intermediate** level* | *Rating: **6.0*** |
 | [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
-| **Project name** | ***Intermediate** level* | Rating: 6.5 |
+| **Project name** | ***Intermediate** level* | *Rating: **6.5*** |
 | [Basic Sorting Algorithms](#4-basic-sorting-algorithms) | Intermediate | 6.5/10 |
 | [Fractal Creator](#10-fractal-creator) | Intermediate | 6.5/10 |
 | [File Explorer](#11-file-explorer) | Intermediate | 6.5/10 |
-| **Project name** | ***Intermediate** level* | Rating: 8.5 |
+| **Project name** | ***Intermediate** level* | *Rating: **8.5*** |
 | [Sudoku Solver](#3-sudoku-solver) | Intermediate | 8.5/10 |
 
 ## Beginner Projects
