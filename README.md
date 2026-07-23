@@ -6,9 +6,9 @@ This repository is designed to help Python learners at all levels, starting with
 
 **Total Projects:** 44
 ---
-**Total Beginner Projects:** 32
+**Total Beginner Projects:** 33
 
-**Total Intermediate Projects:** 12
+**Total Intermediate Projects:** 11
 
 ## Table of Contents
 
@@ -32,53 +32,68 @@ This repository is designed to help Python learners at all levels, starting with
 
 ## Project Difficulty Ratings
 
-| Project | Category | Difficulty |
+| *Project* | *Category* | *Difficulty* |
 | :--- | :--- | :--- |
-| [Calculator](#1-calculator) | Beginner | 1.5/10 |
-| [Number Guessing Game](#2-number-guessing-game) | Beginner | 2.0/10 |
-| [Password Generator](#3-password-generator) | Beginner | 2.5/10 |
-| [Tip Calculator](#4-tip-calculator) | Beginner | 1.5/10 |
-| [Temperature Converter](#5-temperature-converter) | Beginner | 1.5/10 |
-| [Palindrome Checker](#6-palindrome-checker) | Beginner | 1.5/10 |
-| [Word Counter](#7-word-counter) | Beginner | 2.0/10 |
-| [Text Encryption](#8-text-encryption) | Beginner | 2.5/10 |
-| [Countdown Timer](#9-countdown-timer) | Beginner | 2.5/10 |
-| [Rock Paper Scissors](#10-rock-paper-scissors) | Beginner | 2.5/10 |
-| [Mad Libs Generator](#11-mad-libs-generator) | Beginner | 2.0/10 |
-| [Dice Rolling Simulator](#12-dice-rolling-simulator) | Beginner | 1.5/10 |
-| [Hangman Game](#13-hangman-game) | Beginner | 3.5/10 |
-| [Address Book](#14-address-book) | Beginner | 4.0/10 |
-| [Pomodoro Timer](#15-pomodoro-timer) | Beginner | 3.0/10 |
-| [Budget Tracker](#16-budget-tracker) | Beginner | 4.5/10 |
-| [File Sorter](#17-file-sorter) | Beginner | 3.5/10 |
-| [Text Reverser](#18-text-reverser) | Beginner | 1.0/10 |
-| [Simple Quiz Game](#19-simple-quiz-game) | Beginner | 2.5/10 |
-| [Prime Number Generator](#20-prime-number-generator) | Beginner | 2.5/10 |
-| [Fibonacci Sequence](#21-fibonacci-sequence) | Beginner | 2.0/10 |
-| [Email Slicer](#22-email-slicer) | Beginner | 1.5/10 |
-| [BMI Calculator](#23-bmi-calculator) | Beginner | 1.5/10 |
-| [Currency Converter](#24-currency-converter) | Beginner | 2.5/10 |
-| [Task Tracker](#25-task-tracker) | Beginner | 3.0/10 |
-| [Unit Converter](#26-unit-converter) | Beginner | 2.5/10 |
-| [Leap Year Checker](#27-leap-year-checker) | Beginner | 1.5/10 |
+| **Project name** | ***Beginner** level* | Rating: 0.5 |
 | [Odd or Even Checker](#28-odd-or-even-checker) | Beginner | 0.5/10 |
 | [Multiplication Table Generator](#29-multiplication-table-generator) | Beginner | 0.5/10 |
 | [Simple Interest Calculator](#30-simple-interest-calculator) | Beginner | 0.5/10 |
+| **Project name** | ***Beginner** level* | Rating: 1.0 |
 | [Anagram Checker](#31-anagram-checker) | Beginner | 1.0/10 |
 | [Acronym Generator](#32-acronym-generator) | Beginner | 1.0/10 |
-| [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
-| [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
-| [Sudoku Solver](#3-sudoku-solver) | Intermediate | 8.5/10 |
-| [Basic Sorting Algorithms](#4-basic-sorting-algorithms) | Intermediate | 6.5/10 |
-| [Prime Number Sieve](#5-prime-number-sieve) | Intermediate | 5.0/10 |
+| [Text Reverser](#18-text-reverser) | Beginner | 1.0/10 |
+| **Project name** | ***Beginner** level* | Rating: 1.5 |
+| [Calculator](#1-calculator) | Beginner | 1.5/10 |
+| [Tip Calculator](#4-tip-calculator) | Beginner | 1.5/10 |
+| [Temperature Converter](#5-temperature-converter) | Beginner | 1.5/10 |
+| [Palindrome Checker](#6-palindrome-checker) | Beginner | 1.5/10 |
+| [Dice Rolling Simulator](#12-dice-rolling-simulator) | Beginner | 1.5/10 |
+| [Email Slicer](#22-email-slicer) | Beginner | 1.5/10 |
+| [BMI Calculator](#23-bmi-calculator) | Beginner | 1.5/10 |
+| [Leap Year Checker](#27-leap-year-checker) | Beginner | 1.5/10 |
+| **Project name** | ***Beginner** level* | Rating: 2.0 |
+| [Number Guessing Game](#2-number-guessing-game) | Beginner | 2.0/10 |
+| [Word Counter](#7-word-counter) | Beginner | 2.0/10 |
+| [Mad Libs Generator](#11-mad-libs-generator) | Beginner | 2.0/10 |
+| [Fibonacci Sequence](#21-fibonacci-sequence) | Beginner | 2.0/10 |
+| **Project name** | ***Beginner** level* | Rating: 2.5 |
+| [Password Generator](#3-password-generator) | Beginner | 2.5/10 |
+| [Text Encryption](#8-text-encryption) | Beginner | 2.5/10 |
+| [Countdown Timer](#9-countdown-timer) | Beginner | 2.5/10 |
+| [Rock Paper Scissors](#10-rock-paper-scissors) | Beginner | 2.5/10 |
+| [Simple Quiz Game](#19-simple-quiz-game) | Beginner | 2.5/10 |
+| [Prime Number Generator](#20-prime-number-generator) | Beginner | 2.5/10 |
+| [Unit Converter](#26-unit-converter) | Beginner | 2.5/10 |
+| [Currency Converter](#24-currency-converter) | Beginner | 2.5/10 |
+| **Project name** | ***Beginner** level* | Rating: 3.0 |
+| [Pomodoro Timer](#15-pomodoro-timer) | Beginner | 3.0/10 |
+| [Task Tracker](#25-task-tracker) | Beginner | 3.0/10 |
+| **Project name** | ***Beginner** level* | Rating: 3.5 |
+| [Hangman Game](#13-hangman-game) | Beginner | 3.5/10 |
+| [File Sorter](#17-file-sorter) | Beginner | 3.5/10 |
+| **Project name** | ***Beginner** level* | Rating: 4.0 |
+| [Address Book](#14-address-book) | Beginner | 4.0/10 |
+| **Project name** | ***Beginner** level* | Rating: 4.5 |
+| [Budget Tracker](#16-budget-tracker) | Beginner | 4.5/10 |
+| [File viewer](#44-file-viewer) | Beginner | 4.5/10 |
+| :--- | :--- | :--- |
+| **Project name** | ***Intermediate** level* | Rating: 4.5 |
 | [Basic Caesar Cipher](#6-basic-caesar-cipher) | Intermediate | 4.5/10 |
-| [Bank Account Simulator (OOP)](#7-bank-account-simulator-oop) | Intermediate | 5.5/10 |
-| [File Metadata Extractor](#8-file-metadata-extractor) | Intermediate | 5.0/10 |
 | [CSV to JSON Converter](#9-csv-to-json-converter) | Intermediate | 4.5/10 |
+| **Project name** | ***Intermediate** level* | Rating: 5.0 |
+| [Prime Number Sieve](#5-prime-number-sieve) | Intermediate | 5.0/10 |
+| [File Metadata Extractor](#8-file-metadata-extractor) | Intermediate | 5.0/10 |
+| **Project name** | ***Intermediate** level* | Rating: 5.5 |
+| [Bank Account Simulator (OOP)](#7-bank-account-simulator-oop) | Intermediate | 5.5/10 |
+| [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
+| **Project name** | ***Intermediate** level* | Rating: 6.0 |
+| [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
+| **Project name** | ***Intermediate** level* | Rating: 6.5 |
+| [Basic Sorting Algorithms](#4-basic-sorting-algorithms) | Intermediate | 6.5/10 |
 | [Fractal Creator](#10-fractal-creator) | Intermediate | 6.5/10 |
 | [File Explorer](#11-file-explorer) | Intermediate | 6.5/10 |
-| [File Viewer](#12-file-viewer) | Intermediate | 4.5/10 |
-
+| **Project name** | ***Intermediate** level* | Rating: 8.5 |
+| [Sudoku Solver](#3-sudoku-solver) | Intermediate | 8.5/10 |
 
 ## Beginner Projects
 
@@ -1092,6 +1107,32 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
+### 44. File viewer
+- **Difficulty**: 4.5/10
+- **Description**: Get filename from user, and print user's file contents. Avoid any crashes! Don't forget it must be infinte loop
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/44_file_viewer.py - [Original](https://github.com/Ericwasepic127/Python-Projects/blob/main/Beginner/44_file_viewer.py)
+- **Steps**:
+  1. Ask for filename
+  2. Check does file exists: If doesn't exists, show user as File Not Found. Handle it for directories too
+  3. Read the file. If it encourtes permission error, notify user as operation not permitted
+  4. Repeat back to 1, unless user clicks Ctrl-C (KeyboardInterrupt, SIGINT) or type `exit` at filename section
+- **Tips:**:
+    <details><summary>Tip 1:</summary>
+
+  Make reusable function for it so it makes easier
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Use `os.path.isfile` to check your file exists and it's not directory 
+
+    </details>
+        <details><summary>Tip 3:</summary>
+
+  Use `open` to handle file operation. It raises exception `PermissionError` when permission failed. Use `try/except` to catch and show user as operation not permitted
+
+    </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
@@ -1397,34 +1438,6 @@ These projects are ideal for those with experience in Python. Each project inclu
   `os.path.isfile` determines whether it file or not; if it is a file, it returns `True`; if not, return `False`.
 
     </details>
-
-### 12. File viewer
-- **Difficulty**: 4.5/10
-- **Description**: Prompt the user for a filename and print the contents of the specified file. Ensure the program handles errors gracefully to avoid crashes. The program should run in an infinite loop until the user decides to exit.
-- **Solution**: [GitHub Repository](https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/12_file_viewer.py) - [Original Source](https://github.com/Ericwasepic127/Python-Projects/blob/main/Beginner/44_file_viewer.py)
-- **Steps**:
-  1. Prompt the user for a filename.
-  2. Check if the file exists: If it does not exist, inform the user with a "File Not Found" message. Ensure to check for directories as well.
-  3. Attempt to read the file. If a permission error occurs, notify the user with an "Operation Not Permitted" message.
-  4. Repeat the process by returning to step 1, unless the user presses Ctrl-C (KeyboardInterrupt, SIGINT) or types "exit" when prompted for the filename.
-- **Tips**:
-  <details><summary>Tip 1:</summary>
-  
-  Create a reusable function to streamline the code and enhance readability.
-  
-  </details>
-  
-  <details><summary>Tip 2:</summary>
-  
-  Utilize `os.path.isfile` to verify that the file exists and is not a directory.
-  
-  </details>
-  
-  <details><summary>Tip 3:</summary>
-  
-  Use the `open` function for file operations. Note that it raises a `PermissionError` when access is denied. Implement try/except blocks to catch this exception and inform the user accordingly.
-  
-  </details>
     
 
 > [!NOTE]
