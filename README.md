@@ -4,11 +4,11 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
-**Total Projects:** 45
+**Total Projects:** 46
 ---
 **Total Beginner Projects:** 32
 
-**Total Intermediate Projects:** 13
+**Total Intermediate Projects:** 14
 
 ## Table of Contents
 
@@ -79,6 +79,7 @@ This repository is designed to help Python learners at all levels, starting with
 | [File Explorer](#11-file-explorer) | Intermediate | 6.5/10 |
 | [File Viewer](#12-file-viewer) | Intermediate | 4.5/10 |
 | [JSON Reader](#13-json-reader) | Intermediate | 5/10 |
+| [Alarm](#14-alarm) | Intermediate | 5/10 |
 
 
 ## Beginner Projects
@@ -1453,6 +1454,36 @@ These projects are ideal for those with experience in Python. Each project inclu
   <details><summary>Tip 3:</summary>
   
   Use `repr()` or `!r` formatting when printing keys and values to preserve data types, and check if the loaded JSON is a dict before calling `.items()` to support lists as well.
+  
+  </details>
+
+
+### 14. Alarm
+- **Difficulty**: 5/10
+- **Description**: Prompt the user to input a target hour and minute, then continuously calculate and display a live countdown until the alarm triggers. Ensure the program handles invalid time inputs gracefully and cleans up neatly when interrupted.
+- **Solution**: [GitHub Repository](https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/14_alarm.py) - Original version by [Ericwasepic127](https://github.com/Ericwasepic127/Python-Projects/).
+- **Steps**:
+  1. Prompt the user for an hour (0–23) and minute (0–59), validating that the inputs are valid integers within the appropriate ranges.
+  2. Ask the user to confirm the target alarm time before starting the clock loop.
+  3. Get the current local time and calculate the total second difference between the current time and the target alarm time. If the target time has already passed today, adjust the calculation to target the same time tomorrow.
+  4. Display a live, updated countdown in the terminal (`HH:MM:SS`) using carriage return formatting (`\r`) so the counter updates in place every second.
+  5. Trigger an auditory or visual alert when the remaining time reaches zero, or exit gracefully if the user terminates the program using `Ctrl-C` (`KeyboardInterrupt`).
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+  
+  Create reusable helper functions (`get_hour()`, `get_min()`) with `while True` loops to re-prompt the user until valid inputs are provided, avoiding deep recursion risks.
+  
+  </details>
+  
+  <details><summary>Tip 2:</summary>
+  
+  Convert both the current time and target alarm time into total elapsed seconds from midnight. Subtracting these values makes calculating hours, minutes, and seconds remaining straightforward using integer division (`//`) and modulo (`%`).
+  
+  </details>
+  
+  <details><summary>Tip 3:</summary>
+  
+  Use `time.sleep(1)` inside your main loop to pause execution for one second per iteration, preventing the loop from consuming unnecessary CPU resources while polling.
   
   </details>
     
