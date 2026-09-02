@@ -4,11 +4,13 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
-**Total Projects:** 46
+**Total Projects:** 48
 ---
 **Total Beginner Projects:** 32
 
 **Total Intermediate Projects:** 14
+
+**Total Tkinter Projects:** 2
 
 ## Table of Contents
 
@@ -16,8 +18,9 @@ This repository is designed to help Python learners at all levels, starting with
 2. [Project Difficulty Ratings](#project-difficulty-ratings)
 3. [Beginner Projects](#beginner-projects)
 4. [Intermediate Projects](#intermediate-projects)
-5. [Contributing](#contributing)
-6. [License](#license)
+5. [Tkinter Projects](#tkinter-projects)
+6. [Contributing](#contributing)
+7. [License](#license)
 
 ## Setup
 
@@ -66,6 +69,7 @@ This repository is designed to help Python learners at all levels, starting with
 | [Simple Interest Calculator](#30-simple-interest-calculator) | Beginner | 0.5/10 |
 | [Anagram Checker](#31-anagram-checker) | Beginner | 1.0/10 |
 | [Acronym Generator](#32-acronym-generator) | Beginner | 1.0/10 |
+| --- | --- | --- |
 | [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
 | [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
 | [Sudoku Solver](#3-sudoku-solver) | Intermediate | 8.5/10 |
@@ -80,6 +84,9 @@ This repository is designed to help Python learners at all levels, starting with
 | [File Viewer](#12-file-viewer) | Intermediate | 4.5/10 |
 | [JSON Reader](#13-json-reader) | Intermediate | 5/10 |
 | [Alarm](#14-alarm) | Intermediate | 5/10 |
+| --- | --- | --- |
+| [Hello Tkinter](#1-hello-tkinter) | Tkinter | 1.0/10 |
+| [Interactive Text Toggle](#2-interactive-text-toggle) | Tkinter | 2.5/10 |
 
 
 ## Beginner Projects
@@ -1490,6 +1497,59 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 > [!NOTE]
 > Working code solutions are in the `/Intermediate` folder.
+
+## Tkinter Projects
+
+These projects introduce desktop graphical user interface (GUI) development in Python using the built-in `tkinter` library.
+
+### 1. Hello Tkinter
+- **Difficulty**: 1.0/10
+- **Description**: Build a basic desktop window containing a greeting text label and a functional quit button to close the application cleanly.
+- **Solution**: [GitHub Repository](https://github.com/Infinitode/Python-Projects/blob/main/Tkinter/1_hello_tk.py) - Original version by [Ericwasepic127](https://github.com/Ericwasepic127/Python-Projects/).
+- **Steps**:
+  1. Initialize the main Tkinter root window object (`tk.Tk()`).
+  2. Create a `Label` widget to display a custom text message on the window.
+  3. Create a `Button` widget configured with `command=root.destroy` to handle window closure when clicked.
+  4. Use geometry management (`.pack()`) to position both elements inside the window frame.
+  5. Call `root.mainloop()` to launch the event loop and keep the window open.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+  
+  Pass function references to the button `command` parameter without invoking them directly (e.g., use `command=root.destroy`, not `root.destroy()`).
+  
+  </details>
+  
+  <details><summary>Tip 2:</summary>
+  
+  Use padding arguments (`padx`, `pady`) in `.pack()` to prevent widgets from touching window edges directly.
+  
+  </details>
+
+### 2. Interactive Text Toggle
+- **Difficulty**: 2.5/10
+- **Description**: Build an interactive GUI application featuring a multi-line text input field and a toggle button that dynamically enables or disables text editing.
+- **Solution**: [GitHub Repository](https://github.com/Infinitode/Python-Projects/blob/main/Tkinter/2_text_box.py) - Original version by [Ericwasepic127](https://github.com/Ericwasepic127/Python-Projects/).
+- **Steps**:
+  1. Initialize the Tkinter application window and add a title.
+  2. Instantiate a `Text` area widget and a `Button` widget.
+  3. Create a closure or event handler function that checks the current button label and toggles both the text widget state (`"normal"` vs. `"disabled"`) and the button text.
+  4. Assign the toggle command to the button using `.config(command=...)`.
+  5. Lay out the widgets with `.pack()` using `fill=tk.BOTH` and `expand=True` to allow the text box to resize smoothly with the window.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+  
+  To allow a widget like `tk.Text` to resize dynamically when expanding the main window, pair `fill=tk.BOTH` with `expand=True` in `.pack()`.
+  
+  </details>
+  
+  <details><summary>Tip 2:</summary>
+  
+  Use higher-order functions or closures to safely bind widget references to command callbacks without relying on global variables.
+  
+  </details>
+
+> [!NOTE]
+> Working code solutions are in the `/Tkinter` folder.
 
 ## Contributing
 
