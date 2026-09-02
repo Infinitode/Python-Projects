@@ -1,24 +1,21 @@
 #!/usr/bin/env python3
 # Made by @Ericwasepic127 - With guided comments
 
-import tkinter as tk # Imports Tkinter module, shortcuts to tk
+import tkinter as tk
 
-root = tk.Tk() # Make window
+# Initialize the main application window
+root = tk.Tk()
+root.title("Hello World App")
 
-label = tk.Label( # Make Label widget
-  root, # Say to THIS window
-  text="Hello, World!" # Display THIS string given
-)
-label.pack() # Show the widget in window
+# Create and position a simple text label
+label = tk.Label(root, text="Hello, World!")
+label.pack(padx=10, pady=10)
 
-button = tk.Button( # Make Button widget
-  root, # Say to THIS window
-  text="Quit", # Display THIS string
-  command=root.destroy # Run THIS command on click
-)
-button.pack( # Show widget in window
-  fill=tk.BOTH # Fill Left and Right
-)
+# Create a quit button that closes the window when clicked
+# Note: Assign the function reference (root.destroy), do not call it with ()
+button = tk.Button(root, text="Quit", command=root.destroy)
+button.pack(fill=tk.X, padx=10, pady=5)
 
-root.mainloop() # Run until window closes
-# If you don't add root.mainloop(), the python program ends, causing window close immediately
+# Start the Tkinter event loop
+# Keeps the application running and listening for user interactions (clicks, keypresses)
+root.mainloop()
