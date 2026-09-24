@@ -4,13 +4,13 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
-**Total Projects:** 48
+**Total Projects:** 54
 ---
-**Total Beginner Projects:** 32
+**Total Beginner Projects:** 34
 
-**Total Intermediate Projects:** 14
+**Total Intermediate Projects:** 16
 
-**Total Tkinter Projects:** 2
+**Total Tkinter Projects:** 4
 
 ## Table of Contents
 
@@ -69,6 +69,8 @@ This repository is designed to help Python learners at all levels, starting with
 | [Simple Interest Calculator](#30-simple-interest-calculator) | Beginner | 0.5/10 |
 | [Anagram Checker](#31-anagram-checker) | Beginner | 1.0/10 |
 | [Acronym Generator](#32-acronym-generator) | Beginner | 1.0/10 |
+| [Vowel & Consonant Counter](#33-vowel--consonant-counter) | Beginner | 1.0/10 |
+| [Roman Numeral Converter](#34-roman-numeral-converter) | Beginner | 2.0/10 |
 | --- | --- | --- |
 | [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
 | [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
@@ -84,9 +86,13 @@ This repository is designed to help Python learners at all levels, starting with
 | [File Viewer](#12-file-viewer) | Intermediate | 4.5/10 |
 | [JSON Reader](#13-json-reader) | Intermediate | 5/10 |
 | [Alarm](#14-alarm) | Intermediate | 5/10 |
+| [Markdown to HTML Converter](#15-markdown-to-html-converter) | Intermediate | 5.0/10 |
+| [Log File Parser & Analyzer](#16-log-file-parser--analyzer) | Intermediate | 5.5/10 |
 | --- | --- | --- |
 | [Hello Tkinter](#1-hello-tkinter) | Tkinter | 1.0/10 |
 | [Interactive Text Toggle](#2-interactive-text-toggle) | Tkinter | 2.5/10 |
+| [Click Counter GUI](#3-click-counter-gui) | Tkinter | 1.5/10 |
+| [Simple Notepad GUI](#4-simple-notepad-gui) | Tkinter | 3.0/10 |
 
 
 ## Beginner Projects
@@ -1101,6 +1107,58 @@ These projects are ideal for those new to Python. Each project includes a descri
 
     </details>
 
+### 33. Vowel & Consonant Counter
+
+- **Difficulty**: 1.0/10
+
+- **Description**: Build a simple program that analyzes a text string and counts the total number of vowels, consonants, digits, and special characters.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/33_vowel_counter.py
+
+- **Steps**:
+  1. Prompt the user for a text string input.
+  2. Loop through each character and check if it is a vowel, consonant, digit, or special character.
+  3. Maintain count totals for each character category.
+  4. Display the character breakdown summary.
+
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Use a string containing all vowels (`"aeiouAEIOU"`) for clean membership testing using `in`.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Use `.isalpha()` and `.isdigit()` methods to check character types easily.
+
+    </details>
+
+### 34. Roman Numeral Converter
+
+- **Difficulty**: 2.0/10
+
+- **Description**: Build a program that converts standard integers to Roman numerals and Roman numerals back to integers.
+
+- **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/34_roman_numeral_converter.py
+
+- **Steps**:
+  1. Prompt the user to choose between Integer-to-Roman or Roman-to-Integer conversion.
+  2. For Integer-to-Roman: Map integer values to Roman symbols in descending order and iterate to subtract values.
+  3. For Roman-to-Integer: Iterate through Roman characters and subtract when a smaller numeral precedes a larger one.
+  4. Display the converted result.
+
+- **Tips:**
+    <details><summary>Tip 1:</summary>
+
+  Store mappings in ordered tuples or dictionaries (e.g., `[(1000, 'M'), (900, 'CM'), ...]`) to handle subtractive pairs like IV, IX, XL, XC, CD, CM easily.
+
+    </details>
+    <details><summary>Tip 2:</summary>
+
+  Process Roman numeral strings from right to left using `reversed()` to compare current vs. previous character values.
+
+    </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
 
@@ -1493,6 +1551,53 @@ These projects are ideal for those with experience in Python. Each project inclu
   Use `time.sleep(1)` inside your main loop to pause execution for one second per iteration, preventing the loop from consuming unnecessary CPU resources while polling.
   
   </details>
+
+
+### 15. Markdown to HTML Converter
+- **Difficulty**: 5.0/10
+- **Description**: A tool that converts basic Markdown syntax (headers, bold, italic, code blocks, inline code, and unordered lists) into formatted HTML code.
+- **Solution**: [GitHub Repository](https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/15_markdown_to_html_converter.py)
+- **Steps**:
+  1. Read Markdown text or input.
+  2. Parse line-by-line using regular expressions to detect headers, list items, and code blocks.
+  3. Apply inline regex replacements for bold, italic, and inline code formatting.
+  4. Wrap elements in appropriate HTML tags (`<h1>`-`<h6>`, `<ul>`/`<li>`, `<pre><code>`, `<p>`).
+  5. Output the generated HTML string.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  Use `re.match()` with capturing groups to parse markdown block structures like headers (`# Header`) and bullet lists (`* item`).
+
+  </details>
+
+  <details><summary>Tip 2:</summary>
+
+  Use state boolean flags (`in_code_block`, `in_list`) to track multi-line code blocks and lists across iterations.
+
+  </details>
+
+
+### 16. Log File Parser & Analyzer
+- **Difficulty**: 5.5/10
+- **Description**: A utility that parses standard log files, aggregates frequency statistics by log severity level, and generates filtered summary reports.
+- **Solution**: [GitHub Repository](https://github.com/Infinitode/Python-Projects/blob/main/Intermediate/16_log_file_parser.py)
+- **Steps**:
+  1. Read log lines and extract timestamp, severity level (INFO, WARNING, ERROR, CRITICAL), and message content using regular expressions.
+  2. Aggregate frequency counts per severity level using `collections.Counter`.
+  3. Allow optional filtering by severity level to view specific log events.
+  4. Print a structured summary report.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  `collections.Counter` makes counting frequency of log level occurrences very clean and efficient.
+
+  </details>
+
+  <details><summary>Tip 2:</summary>
+
+  Use structured regular expressions with named or ordered capturing groups to separate timestamp, level, and message safely.
+
+  </details>
     
 
 > [!NOTE]
@@ -1547,6 +1652,41 @@ These projects introduce desktop graphical user interface (GUI) development in P
   Use higher-order functions or closures to safely bind widget references to command callbacks without relying on global variables.
   
   </details>
+
+
+### 3. Click Counter GUI
+- **Difficulty**: 1.5/10
+- **Description**: Build a desktop GUI application that maintains a tally count with increment, decrement, and reset buttons.
+- **Solution**: [GitHub Repository](https://github.com/Infinitode/Python-Projects/blob/main/Tkinter/3_click_counter.py)
+- **Steps**:
+  1. Initialize Tkinter main window and state variables.
+  2. Add a prominent text `Label` widget displaying the current tally count.
+  3. Add `Button` widgets for `+` (increment), `-` (decrement), and `Reset`.
+  4. Update the label value and fg color dynamically when count changes (e.g. positive=green, negative=red).
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  Group related control buttons using a `tk.Frame` container and organize them side-by-side using `.grid()`.
+
+  </details>
+
+
+### 4. Simple Notepad GUI
+- **Difficulty**: 3.0/10
+- **Description**: Build a desktop text editor GUI featuring file open, save, save as, and multi-line editing capabilities.
+- **Solution**: [GitHub Repository](https://github.com/Infinitode/Python-Projects/blob/main/Tkinter/4_simple_notepad.py)
+- **Steps**:
+  1. Create main window with a scrollable `tk.Text` widget.
+  2. Create a top menu bar (`tk.Menu`) with a `File` cascade menu containing `New`, `Open`, `Save`, `Save As`, and `Exit`.
+  3. Connect menu items to handlers utilizing `tkinter.filedialog` (`askopenfilename`, `asksaveasfilename`) and `tkinter.messagebox`.
+  4. Handle reading and writing text files cleanly using UTF-8 encoding.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  Attach a `tk.Scrollbar` to the `tk.Text` widget using `yscrollcommand=scrollbar.set` and `scrollbar.config(command=text_area.yview)`.
+
+  </details>
+
 
 > [!NOTE]
 > Working code solutions are in the `/Tkinter` folder.
