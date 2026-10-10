@@ -45,8 +45,7 @@ This repository is designed to help Python learners at all levels, starting with
 
 ## Projects
 
-<details>
-<summary>Browse all 57 projects (difficulty ratings, Beginner, Intermediate, and Tkinter)</summary>
+Browse all projects in `Python Projects`, from beginner to advanced projects.
 
 ## Project Difficulty Ratings
 
@@ -1734,8 +1733,6 @@ These projects introduce desktop graphical user interface (GUI) development in P
 
 > [!NOTE]
 > Working code solutions are in the `/Tkinter` folder.
-
-</details>
 
 ## Contributing
 
