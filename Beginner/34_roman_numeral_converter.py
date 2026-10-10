@@ -1,7 +1,8 @@
 def int_to_roman(number):
-    """
-    Converts an integer (1 to 3999) to a Roman numeral string.
-    """
+    """Convert an integer from 1 to 3999 to its canonical Roman numeral."""
+    if isinstance(number, bool) or not isinstance(number, int) or not 1 <= number <= 3999:
+        raise ValueError("Number must be an integer between 1 and 3999.")
+
     # Mapping of integer values to Roman numeral symbols in descending order
     roman_map = [
         (1000, "M"), (900, "CM"), (500, "D"), (400, "CD"),
@@ -20,9 +21,7 @@ def int_to_roman(number):
 
 
 def roman_to_int(roman_str):
-    """
-    Converts a valid Roman numeral string to an integer.
-    """
+    """Convert a canonical Roman numeral (case-insensitive) to an integer."""
     # Mapping of single Roman numeral characters to integer values
     roman_values = {
         'I': 1, 'V': 5, 'X': 10, 'L': 50,
@@ -47,6 +46,10 @@ def roman_to_int(roman_str):
             total += current_value
             prev_value = current_value
 
+    # Round-tripping rejects illegal repetitions/subtractions (IIII, IC, etc.)
+    # and values outside the conventional 1-3999 range.
+    if not 1 <= total <= 3999 or int_to_roman(total) != roman_str:
+        raise ValueError("Invalid Roman numeral: '{}'".format(roman_str))
     return total
 
 

@@ -5,9 +5,9 @@
 import json
 import sys
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
-def read_json_file(file_path: Path) -> Any | None:
+def read_json_file(file_path: Path) -> Optional[Any]:
     """Read and parse a JSON file."""
     if not file_path.is_file():
         print(f"ERROR: '{file_path}' is not a file or does not exist.", file=sys.stderr)
