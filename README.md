@@ -4,23 +4,33 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
-**Total Projects:** 54
+**Total Projects:** 57
 ---
-**Total Beginner Projects:** 34
+**Total Beginner Projects:** 35
 
-**Total Intermediate Projects:** 16
+**Total Intermediate Projects:** 17
 
-**Total Tkinter Projects:** 4
+**Total Tkinter Projects:** 5
 
 ## Table of Contents
 
-1. [Setup](#setup)
-2. [Project Difficulty Ratings](#project-difficulty-ratings)
-3. [Beginner Projects](#beginner-projects)
-4. [Intermediate Projects](#intermediate-projects)
-5. [Tkinter Projects](#tkinter-projects)
-6. [Contributing](#contributing)
-7. [License](#license)
+1. [Latest Changes](#latest-changes)
+2. [Setup](#setup)
+3. [Projects](#projects)
+4. [Contributing](#contributing)
+5. [License](#license)
+
+## Latest Changes
+
+<details>
+<summary>Latest changes (October 2026)</summary>
+
+- Temperature Converter validates the input against absolute zero for **each unit** (−273.15°C or −459.67°F) and reports invalid values.
+- Roman Numeral Converter rejects noncanonical numerals (such as `IIII` and `IC`) and values outside 1–3999.
+- JSON Reader now uses a Python 3.6-compatible type annotation instead of Python 3.10's `|` union syntax.
+- The project ratings and all project descriptions can now be opened together in the **Projects** section below.
+
+</details>
 
 ## Setup
 
@@ -32,6 +42,11 @@ This repository is designed to help Python learners at all levels, starting with
 
 > [!TIP]
 > We use Visual Studio Code. It's fast, efficient, and has many extensions and customizability options.
+
+## Projects
+
+<details>
+<summary>Browse all 57 projects (difficulty ratings, Beginner, Intermediate, and Tkinter)</summary>
 
 ## Project Difficulty Ratings
 
@@ -71,6 +86,7 @@ This repository is designed to help Python learners at all levels, starting with
 | [Acronym Generator](#32-acronym-generator) | Beginner | 1.0/10 |
 | [Vowel & Consonant Counter](#33-vowel--consonant-counter) | Beginner | 1.0/10 |
 | [Roman Numeral Converter](#34-roman-numeral-converter) | Beginner | 2.0/10 |
+| [Grade Calculator](#35-grade-calculator) | Beginner | 2.0/10 |
 | --- | --- | --- |
 | [Tic Tac Toe](#1-tic-tac-toe) | Intermediate | 6.0/10 |
 | [Text-based Adventure Game](#2-text-based-adventure-game) | Intermediate | 5.5/10 |
@@ -88,11 +104,13 @@ This repository is designed to help Python learners at all levels, starting with
 | [Alarm](#14-alarm) | Intermediate | 5/10 |
 | [Markdown to HTML Converter](#15-markdown-to-html-converter) | Intermediate | 5.0/10 |
 | [Log File Parser & Analyzer](#16-log-file-parser--analyzer) | Intermediate | 5.5/10 |
+| [Duplicate File Finder](#17-duplicate-file-finder) | Intermediate | 6.0/10 |
 | --- | --- | --- |
 | [Hello Tkinter](#1-hello-tkinter) | Tkinter | 1.0/10 |
 | [Interactive Text Toggle](#2-interactive-text-toggle) | Tkinter | 2.5/10 |
 | [Click Counter GUI](#3-click-counter-gui) | Tkinter | 1.5/10 |
 | [Simple Notepad GUI](#4-simple-notepad-gui) | Tkinter | 3.0/10 |
+| [RGB Color Mixer](#5-rgb-color-mixer) | Tkinter | 3.0/10 |
 
 
 ## Beginner Projects
@@ -223,7 +241,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Get all inputs using `input()`.
@@ -249,15 +266,13 @@ These projects are ideal for those new to Python. Each project includes a descri
 - **Solution**: https://github.com/Infinitode/Python-Projects/blob/main/Beginner/5_temperature_converter.py
 
 - **Steps**:
-  1. Define conversion values for each conversion.
-  2. Prompt the user for the unit to convert to, and from.
-  3. Prompt the user for a temperature value.
-  4. Convert.
-  5. Display the result.
+  1. Prompt for the input unit (`C` or `F`) and a numeric temperature.
+  2. Reject values below absolute zero for that unit (−273.15°C or −459.67°F).
+  3. Convert to the other unit with the appropriate formula.
+  4. Display the result, or a helpful message for invalid input.
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use predefined formulas for accurate conversion between units.
@@ -290,7 +305,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use `input()` for input.
@@ -323,7 +337,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use `input()` for input.
@@ -361,7 +374,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use `input()` for input.
@@ -399,7 +411,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use `input()` for input.
@@ -437,7 +448,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use `input()` for input.
@@ -475,7 +485,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use `input()` for input.
@@ -512,7 +521,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use `input()` for input.
@@ -550,7 +558,6 @@ These projects are ideal for those new to Python. Each project includes a descri
   7. End the game when the word is guessed or attempts run out.
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use `random.choice()` to select a random word from a list.
@@ -589,7 +596,6 @@ These projects are ideal for those new to Python. Each project includes a descri
   3. Create a main loop to interact with the user.
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use a dictionary to store contact information.
@@ -613,7 +619,6 @@ These projects are ideal for those new to Python. Each project includes a descri
   3. Alternate between work and break sessions.
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use the `time` module to pause execution.
@@ -637,7 +642,6 @@ These projects are ideal for those new to Python. Each project includes a descri
   3. Calculate and display the current balance.
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use lists of dictionaries to store income and expense transactions.
@@ -667,7 +671,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use the `os` module to interact with the file system, such as listing files (`os.listdir()`), creating directories (`os.mkdir()`), and moving files (`os.rename()`).
@@ -705,7 +708,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Python's string slicing is a very concise way to reverse a string: `my_string[::-1]`.
@@ -740,7 +742,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use a list of dictionaries to store your questions, where each dictionary contains the question, options, and the correct answer.
@@ -774,7 +775,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   A prime number is a number greater than 1 that has no positive divisors other than 1 and itself.
@@ -807,7 +807,6 @@ These projects are ideal for those new to Python. Each project includes a descri
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   The Fibonacci sequence starts with 0 and 1. Each subsequent number is the sum of the two preceding ones (e.g., 0, 1, 1, 2, 3, 5, 8...).
@@ -837,7 +836,6 @@ These projects are ideal for those new to Python. Each project includes a descri
   4. Display the results.
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use `input()` to get user input. The `.strip()` method is useful for removing leading/trailing whitespace.
@@ -867,7 +865,6 @@ These projects are ideal for those new to Python. Each project includes a descri
   4. Provide a basic interpretation of the result (e.g., underweight, normal, overweight).
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use `float(input())` to convert user input into a number that can have decimal points.
@@ -897,7 +894,6 @@ These projects are ideal for those new to Python. Each project includes a descri
   4. Display the final converted amount.
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   A dictionary is a great way to store the currency exchange rates.
@@ -1144,8 +1140,8 @@ These projects are ideal for those new to Python. Each project includes a descri
 - **Steps**:
   1. Prompt the user to choose between Integer-to-Roman or Roman-to-Integer conversion.
   2. For Integer-to-Roman: Map integer values to Roman symbols in descending order and iterate to subtract values.
-  3. For Roman-to-Integer: Iterate through Roman characters and subtract when a smaller numeral precedes a larger one.
-  4. Display the converted result.
+  3. For Roman-to-Integer: Sum or subtract symbol values, then convert the result back to Roman to reject invalid forms such as `IIII` or `IC`.
+  4. Accept only canonical numerals representing integers from 1 to 3999, then display the result.
 
 - **Tips:**
     <details><summary>Tip 1:</summary>
@@ -1158,6 +1154,24 @@ These projects are ideal for those new to Python. Each project includes a descri
   Process Roman numeral strings from right to left using `reversed()` to compare current vs. previous character values.
 
     </details>
+
+### 35. Grade Calculator
+
+- **Difficulty**: 2.0/10
+- **Description**: Enter test scores and calculate their average and letter grade (A: 90+, B: 80+, C: 70+, D: 60+, F: below 60).
+- **Solution**: [Beginner/35_grade_calculator.py](Beginner/35_grade_calculator.py)
+- **Run**: `python Beginner/35_grade_calculator.py`
+- **Steps**:
+  1. Prompt for scores from 0 to 100, one at a time; finish with a blank line.
+  2. Reject nonnumeric and out-of-range entries without stopping the program.
+  3. Compute the average and assign a letter grade using conditional statements.
+  4. Print the result, or explain that no scores were entered.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  Store valid scores in a list, then divide `sum(scores)` by `len(scores)` only when the list is nonempty.
+
+  </details>
 
 > [!NOTE]
 > Working code solutions are in the `/Beginner` folder.
@@ -1181,7 +1195,6 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use functions for repetitive tasks.
@@ -1210,7 +1223,6 @@ These projects are ideal for those with experience in Python. Each project inclu
   3. Get user input to navigate through the story.
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Use a dictionary to define the game world, with rooms, descriptions, and choices.
@@ -1239,7 +1251,6 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   Backtracking involves trying a possibility, seeing if it leads to a solution, and if not, undoing it (backtracking) to try another.
@@ -1273,7 +1284,6 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   **Bubble Sort**: Repeatedly step through the list, compare adjacent elements, and swap them if they are in the wrong order.
@@ -1307,7 +1317,6 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   The Sieve of Eratosthenes is much more efficient for finding all primes up to a limit than checking each number individually.
@@ -1337,7 +1346,6 @@ These projects are ideal for those with experience in Python. Each project inclu
 
 - **Tips:**
 
-    </summary>
     <details><summary>Tip 1:</summary>
 
   The modulo operator (`%`) is perfect for handling the "wrap-around" logic for the alphabet. `(char_position + shift) % 26`.
@@ -1600,6 +1608,24 @@ These projects are ideal for those with experience in Python. Each project inclu
   </details>
     
 
+### 17. Duplicate File Finder
+
+- **Difficulty**: 6.0/10
+- **Description**: Find files with identical contents inside a directory and its subdirectories without deleting or changing files.
+- **Solution**: [Intermediate/17_duplicate_file_finder.py](Intermediate/17_duplicate_file_finder.py)
+- **Run**: `python Intermediate/17_duplicate_file_finder.py path/to/folder` (omit the path to scan the current folder).
+- **Steps**:
+  1. Walk through the directory tree and group regular files by size, skipping symbolic links.
+  2. Hash only files sharing a size, reading them in chunks to conserve memory.
+  3. Group matching SHA-256 digests and print groups of two or more files.
+  4. Report unreadable files separately; never automatically remove duplicates.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  Use `os.walk()` to traverse folders, `pathlib.Path.stat()` to get file sizes, and `hashlib.sha256()` to compare contents.
+
+  </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Intermediate` folder.
 
@@ -1688,8 +1714,28 @@ These projects introduce desktop graphical user interface (GUI) development in P
   </details>
 
 
+### 5. RGB Color Mixer
+
+- **Difficulty**: 3.0/10
+- **Description**: Mix red, green, and blue values with sliders, preview the color, and copy its hexadecimal code.
+- **Solution**: [Tkinter/5_color_mixer.py](Tkinter/5_color_mixer.py)
+- **Run**: `python Tkinter/5_color_mixer.py` (requires a desktop display with Tkinter installed).
+- **Steps**:
+  1. Create a Tkinter window with three `Scale` widgets ranging from 0 to 255.
+  2. Convert the slider values to a `#RRGGBB` hex string.
+  3. Update a preview label each time a slider moves.
+  4. Add a button to copy the hex code to the clipboard.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  Use `{:02X}` to format each channel as a two-digit hexadecimal value, including leading zeros.
+
+  </details>
+
 > [!NOTE]
 > Working code solutions are in the `/Tkinter` folder.
+
+</details>
 
 ## Contributing
 
