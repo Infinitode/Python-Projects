@@ -28,7 +28,6 @@ This repository is designed to help Python learners at all levels, starting with
 - Temperature Converter validates the input against absolute zero for **each unit** (−273.15°C or −459.67°F) and reports invalid values.
 - Roman Numeral Converter rejects noncanonical numerals (such as `IIII` and `IC`) and values outside 1–3999.
 - JSON Reader now uses a Python 3.6-compatible type annotation instead of Python 3.10's `|` union syntax.
-- The project ratings and all project descriptions can now be opened together in the **Projects** section below.
 
 </details>
 
