@@ -28,6 +28,7 @@ This repository is designed to help Python learners at all levels, starting with
 - Temperature Converter validates the input against absolute zero for **each unit** (−273.15°C or −459.67°F) and reports invalid values.
 - Roman Numeral Converter rejects noncanonical numerals (such as `IIII` and `IC`) and values outside 1–3999.
 - JSON Reader now uses a Python 3.6-compatible type annotation instead of Python 3.10's `|` union syntax.
+- Address Book no longer silently overwrites contacts that share a name. It now asks whether to overwrite, keep both (saving the new contact as `Name (2)`, `Name (3)`, …), or cancel.
 
 </details>
 
@@ -592,6 +593,7 @@ These projects are ideal for those new to Python. Each project includes a descri
   1. Create functions to add, view, and delete contacts.
   2. Store contacts in a file (e.g., JSON).
   3. Create a main loop to interact with the user.
+  4. Check for an existing contact with the same name before saving.
 - **Tips:**
 
     <details><summary>Tip 1:</summary>
@@ -602,6 +604,13 @@ These projects are ideal for those new to Python. Each project includes a descri
     <details><summary>Tip 2:</summary>
 
   Use the `json` module to save and load contacts from a file.
+
+    </details>
+    <details><summary>Tip 3:</summary>
+
+  Never overwrite a contact silently. Check whether the name already exists and ask the user what to do: overwrite it, cancel, or keep both by saving the new contact under an incremented name like `Rani (2)`, `Rani (3)`, and so on.
+
+  Thanks to [@SVarnavi06](https://github.com/SVarnavi06) for pointing out the silent overwrite bug in [issue #18](https://github.com/Infinitode/Python-Projects/issues/18)!
 
     </details>
 
