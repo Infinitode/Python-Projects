@@ -4,11 +4,11 @@ An open-source GitHub repository containing Python project ideas, steps, tips, a
 
 This repository is designed to help Python learners at all levels, starting with beginner-friendly projects and gradually progressing to more advanced ones. Each project includes clear instructions and a working code implementation.
 
-**Total Projects:** 57
+**Total Projects:** 62
 ---
 **Total Beginner Projects:** 35
 
-**Total Intermediate Projects:** 17
+**Total Intermediate Projects:** 22
 
 **Total Tkinter Projects:** 5
 
@@ -21,6 +21,20 @@ This repository is designed to help Python learners at all levels, starting with
 5. [License](#license)
 
 ## Latest Changes
+
+<details>
+<summary>Latest changes (November 2026)</summary>
+
+- Added five new **Intermediate** projects focused on algorithms and fractals:
+  - **Advanced Sorting Algorithms** — merge, quick, heap, and counting sort with a comparison-counting benchmark and self-tests.
+  - **Sorting Visualizer** — watch bubble, insertion, selection, quick, and merge sort as an animated terminal bar chart.
+  - **Maze Generator & Solver** — carve a random perfect maze, then race BFS, DFS, and A* to the exit.
+  - **Fibonacci Word Fractal** — draw the fractal grown from the Fibonacci sequence, with ASCII preview and SVG export.
+  - **Mandelbulb Raymarcher** — render the 3D Mandelbulb fractal in pure Python, with ASCII preview and PNG export.
+- All new projects use only the Python standard library and remain compatible with Python 3.6+.
+- The new projects can export their results as images (PNG/SVG) so outputs can be viewed clearly outside the terminal, not just as ASCII art.
+
+</details>
 
 <details>
 <summary>Latest changes (October 2026)</summary>
@@ -104,6 +118,11 @@ Browse all projects in `Python Projects`, from beginner to advanced projects.
 | [Markdown to HTML Converter](#15-markdown-to-html-converter) | Intermediate | 5.0/10 |
 | [Log File Parser & Analyzer](#16-log-file-parser--analyzer) | Intermediate | 5.5/10 |
 | [Duplicate File Finder](#17-duplicate-file-finder) | Intermediate | 6.0/10 |
+| [Advanced Sorting Algorithms](#18-advanced-sorting-algorithms) | Intermediate | 7.0/10 |
+| [Sorting Visualizer](#19-sorting-visualizer) | Intermediate | 6.5/10 |
+| [Maze Generator & Solver](#20-maze-generator--solver) | Intermediate | 7.5/10 |
+| [Fibonacci Word Fractal](#21-fibonacci-word-fractal) | Intermediate | 6.5/10 |
+| [Mandelbulb Raymarcher](#22-mandelbulb-raymarcher) | Intermediate | 8.5/10 |
 | --- | --- | --- |
 | [Hello Tkinter](#1-hello-tkinter) | Tkinter | 1.0/10 |
 | [Interactive Text Toggle](#2-interactive-text-toggle) | Tkinter | 2.5/10 |
@@ -1630,6 +1649,140 @@ These projects are ideal for those with experience in Python. Each project inclu
   <details><summary>Tip 1:</summary>
 
   Use `os.walk()` to traverse folders, `pathlib.Path.stat()` to get file sizes, and `hashlib.sha256()` to compare contents.
+
+  </details>
+
+### 18. Advanced Sorting Algorithms
+
+- **Difficulty**: 7.0/10
+- **Description**: Implement the O(n log n) sorting workhorses -- merge sort, quick sort, and heap sort -- plus counting sort, a non-comparison sort. Includes a benchmark that times each algorithm and counts its element comparisons, a self-test mode, and PNG export of a before/after bar chart.
+- **Solution**: [Intermediate/18_advanced_sorting_algorithms.py](Intermediate/18_advanced_sorting_algorithms.py)
+- **Run**: `python Intermediate/18_advanced_sorting_algorithms.py` (add `--test` for self-tests, `--sizes 100 1000 10000` to benchmark, or `--output sorting.png` to save a before/after bar chart image).
+- **Steps**:
+  1. Implement merge sort by splitting the list, sorting each half, and merging while taking the left element on ties to stay stable.
+  2. Implement quick sort with a Hoare partition and a median-of-three pivot, recursing into the smaller partition to bound the stack.
+  3. Implement heap sort by building a max-heap with sift-down, then repeatedly swapping the maximum to the end.
+  4. Implement counting sort by tallying each non-negative integer key into an array and reading the keys back in order.
+  5. Wrap the data in a counting `int` subclass to measure comparisons, time each run, and verify the result against `sorted()`.
+  6. Optionally render a before/after bar chart to a PNG with `--output` so the result is visible outside the terminal.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  A subclass of `int` that overrides `__lt__` lets you count comparisons without changing any sorting code.
+
+  </details>
+
+  <details><summary>Tip 2:</summary>
+
+  Counting sort never compares two elements -- it uses keys as array indices -- so it beats comparison sorts when the key range is small, but needs O(k) memory.
+
+  </details>
+
+### 19. Sorting Visualizer
+
+- **Difficulty**: 6.5/10
+- **Description**: Watch sorting algorithms work as an animated bar chart in the terminal, or export a PNG filmstrip of the animation. Each algorithm is a generator that yields the indices it touches, so the drawing loop is completely separate from the sorting logic.
+- **Solution**: [Intermediate/19_sorting_visualizer.py](Intermediate/19_sorting_visualizer.py)
+- **Run**: `python Intermediate/19_sorting_visualizer.py --algorithm quick --size 40` (needs a real terminal; redirected output prints a static summary). Add `--output filmstrip.png` to save a multi-frame PNG instead of animating.
+- **Steps**:
+  1. Write each sort as a generator that mutates the list and `yield`s the indices it just swapped or wrote.
+  2. Use `yield from` to forward the steps of recursive quick sort and merge sort calls.
+  3. Render one frame per yield as a vertical bar chart, highlighting the active bars with ANSI color.
+  4. Redraw in place with ANSI cursor-home and clear codes, hiding the cursor during the animation.
+  5. Fall back to a static final chart and step count when output is not a terminal.
+  6. Optionally capture several stages of the sort into a PNG filmstrip with `--output` so the animation can be viewed without a terminal.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  Generators let a function pause after every step, which is a clean way to drive an animation without threads or callbacks.
+
+  </details>
+
+  <details><summary>Tip 2:</summary>
+
+  Build each frame as a single string and write it once to reduce flicker; restore the cursor in a `finally` block so Ctrl+C never leaves it hidden.
+
+  </details>
+
+### 20. Maze Generator & Solver
+
+- **Difficulty**: 7.5/10
+- **Description**: Carve a random "perfect" maze with the recursive backtracker, then solve it with three classic graph searches -- BFS, DFS, and A* -- and compare how many cells each one explores. Can save the solved maze as a PNG image.
+- **Solution**: [Intermediate/20_maze_generator_solver.py](Intermediate/20_maze_generator_solver.py)
+- **Run**: `python Intermediate/20_maze_generator_solver.py --width 20 --height 10 --seed 7` (add `--algorithm astar` for a single solver, `--test`, or `--output maze.png` to save a PNG; with `--algorithm all` one PNG per solver is written).
+- **Steps**:
+  1. Represent the maze as a grid with cells at odd coordinates and walls between them.
+  2. Carve passages with the recursive backtracker using an explicit stack so huge mazes cannot overflow the call stack.
+  3. Solve with BFS (a queue) to guarantee a shortest path, counting explored cells.
+  4. Solve with DFS (a stack) and A* (a priority queue ordered by distance-so-far plus Manhattan heuristic).
+  5. Draw each solution path over the maze and print a comparison of path lengths and cells explored.
+  6. Optionally save the solved maze as a PNG with `--output`, coloring walls, the path, the start, and the exit.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  A perfect maze has exactly one route between any two cells, so all three solvers find the same path -- the interesting difference is how many cells each explores.
+
+  </details>
+
+  <details><summary>Tip 2:</summary>
+
+  A* with an admissible heuristic (Manhattan distance never overestimates) finds a shortest path while usually expanding far fewer cells than BFS.
+
+  </details>
+
+### 21. Fibonacci Word Fractal
+
+- **Difficulty**: 6.5/10
+- **Description**: Draw the Fibonacci word fractal, a self-similar curve grown from the Fibonacci sequence. The Fibonacci word is built by concatenation (S(n) = S(n-1) + S(n-2)), its lengths are the Fibonacci numbers, and reading it as turtle-graphics instructions draws the fractal. Exports crisp SVG and PNG images.
+- **Solution**: [Intermediate/21_fibonacci_word_fractal.py](Intermediate/21_fibonacci_word_fractal.py)
+- **Run**: `python Intermediate/21_fibonacci_word_fractal.py --svg fibonacci.svg` (or `--png fibonacci.png`; add `--word` to see the words and their Fibonacci lengths, and `--stroke` / `--png-width` to tune the PNG).
+- **Steps**:
+  1. Build the Fibonacci word by repeatedly concatenating the previous two words.
+  2. Walk the word as turtle instructions: every digit steps forward; a "0" turns left on even positions and right on odd positions; a "1" goes straight.
+  3. Rasterize the path into an ASCII preview, using two characters per cell to keep the proportions.
+  4. Auto-pick the largest iteration that fits the preview box, or set it with `--iterations`.
+  5. Optionally export the curve as a crisp SVG polyline or a thin-stroked PNG using only the standard library.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  The word lengths 1, 2, 3, 5, 8, 13, ... are exactly the Fibonacci numbers from Beginner project 21 -- the same sequence now drives a fractal.
+
+  </details>
+
+  <details><summary>Tip 2:</summary>
+
+  SVG's y axis points down while the turtle's y grows upward, so mirror the y coordinate when writing the polyline.
+
+  </details>
+
+  <details><summary>Tip 3:</summary>
+
+  The curve is rectilinear (only 90-degree turns), so right angles are expected. If a raster preview looks chunky, use thin strokes (`--stroke 2`) and a larger `--png-width`, or prefer the vector SVG, to reveal the delicate self-similar detail.
+
+  </details>
+
+### 22. Mandelbulb Raymarcher
+
+- **Difficulty**: 8.5/10
+- **Description**: Render the Mandelbulb, a 3D generalization of the Mandelbrot set, using a pure-Python ray marcher. A distance estimator lets each ray jump safely through empty space until it hits the fractal surface, which is then shaded with an estimated normal. Exports PNG images with a hand-written encoder.
+- **Solution**: [Intermediate/22_mandelbulb_raymarcher.py](Intermediate/22_mandelbulb_raymarcher.py)
+- **Run**: `python Intermediate/22_mandelbulb_raymarcher.py --output bulb.png --width 400 --height 260` (start small; big images take longer).
+- **Steps**:
+  1. Implement the Mandelbulb distance estimator by iterating z -> z^power + c in spherical coordinates while tracking the running derivative.
+  2. Set up an orbiting camera and shoot one ray per pixel, intersecting a bounding sphere first to skip empty corners.
+  3. Ray-march using the distance estimate, stopping when the remaining distance is tiny (a hit) or the ray leaves the bounding sphere.
+  4. Estimate the surface normal from four distance samples and shade with diffuse lighting plus step-count ambient occlusion.
+  5. Write the image as a PNG using only `zlib` and `struct`, and downsample it to an ASCII terminal preview.
+- **Tips**:
+  <details><summary>Tip 1:</summary>
+
+  The distance estimate 0.5 * log(r) * r / dr is a safe lower bound on the distance to the surface, which is what lets rays jump without missing detail.
+
+  </details>
+
+  <details><summary>Tip 2:</summary>
+
+  A PNG is just a signature plus length/type/data/CRC chunks; compressing the filtered scanlines with `zlib` is enough to produce a valid image with no third-party libraries.
 
   </details>
 
