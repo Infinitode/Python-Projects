@@ -13,14 +13,19 @@ Run with:
     python Intermediate/18_advanced_sorting_algorithms.py --sizes 100 1000 10000
     python Intermediate/18_advanced_sorting_algorithms.py --algorithms merge quick
     python Intermediate/18_advanced_sorting_algorithms.py --test
+    python Intermediate/18_advanced_sorting_algorithms.py --output sorting.png
 
+Use --output to save a before/after bar chart as a PNG image so the result
+can be viewed clearly outside the terminal.
 Only the Python standard library is used.
 """
 
 import argparse
 import random
+import struct
 import sys
 import time
+import zlib
 
 
 class CountedInt(int):
@@ -265,6 +270,65 @@ def run_benchmark(sizes, seed, names):
     print("Tip: compare these numbers with the O(n^2) sorts in 4_sorting_algorithms.py.")
 
 
+def _write_png(filename, width, height, pixels):
+    """Write an 8-bit RGB PNG from a flat row-major list of (r, g, b) tuples."""
+
+    def chunk(tag, data):
+        return (
+            struct.pack(">I", len(data))
+            + tag
+            + data
+            + struct.pack(">I", zlib.crc32(tag + data) & 0xFFFFFFFF)
+        )
+
+    raw = bytearray()
+    for rgb in pixels:
+        raw.extend(rgb)
+    stride = width * 3
+    scanlines = b"".join(
+        b"\x00" + bytes(raw[y * stride:(y + 1) * stride]) for y in range(height)
+    )
+    png = (
+        b"\x89PNG\r\n\x1a\n"
+        + chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0))
+        + chunk(b"IDAT", zlib.compress(scanlines, 9))
+        + chunk(b"IEND", b"")
+    )
+    with open(filename, "wb") as handle:
+        handle.write(png)
+
+
+def save_sorting_image(filename, seed=None, bars=40):
+    """Save a before/after bar chart PNG so the result is visible outside a terminal."""
+    rng = random.Random(seed)
+    data = [rng.randrange(5, 100) for _ in range(bars)]
+    ordered = merge_sort(list(data))
+
+    bar_w, gap, chart_h, margin = 9, 3, 220, 30
+    group_w = bars * (bar_w + gap)
+    width = margin * 3 + group_w * 2
+    height = chart_h + margin * 2
+    pixels = [(24, 26, 34)] * (width * height)
+
+    def rect(x0, y0, x1, y1, color):
+        for y in range(max(0, y0), min(height, y1)):
+            for x in range(max(0, x0), min(width, x1)):
+                pixels[y * width + x] = color
+
+    peak = max(data)
+
+    def draw_group(values, x_start, color):
+        for i, value in enumerate(values):
+            bar_h = int(value / peak * chart_h)
+            x = x_start + i * (bar_w + gap)
+            rect(x, height - margin - bar_h, x + bar_w, height - margin, color)
+
+    draw_group(data, margin, (90, 140, 220))
+    rect(width // 2 - 1, margin, width // 2 + 1, height - margin, (70, 74, 88))
+    draw_group(ordered, width // 2 + margin, (90, 200, 130))
+    _write_png(filename, width, height, pixels)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Advanced sorting algorithms with benchmarking and self-tests."
@@ -281,6 +345,8 @@ def main():
     parser.add_argument("--seed", type=int, default=None, help="random seed for reproducible benchmarks")
     parser.add_argument("--test", action="store_true", help="run correctness self-tests and exit")
     parser.add_argument("--no-demo", action="store_true", help="skip the small worked example")
+    parser.add_argument("--output", metavar="FILE", help="save a before/after bar chart as a PNG image")
+    parser.add_argument("--bars", type=int, default=40, help="number of bars in the exported chart (default: 40)")
     args = parser.parse_args()
 
     if args.test:
@@ -289,10 +355,15 @@ def main():
 
     if any(size < 0 for size in args.sizes):
         parser.error("--sizes values must be non-negative")
+    if args.bars < 2:
+        parser.error("--bars must be at least 2")
 
     if not args.no_demo:
         run_demo()
     run_benchmark(args.sizes, args.seed, args.algorithms)
+    if args.output:
+        save_sorting_image(args.output, args.seed, args.bars)
+        print("Saved sorting chart to {}".format(args.output))
     return 0
 
 

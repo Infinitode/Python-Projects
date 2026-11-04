@@ -32,6 +32,7 @@ This repository is designed to help Python learners at all levels, starting with
   - **Fibonacci Word Fractal** — draw the fractal grown from the Fibonacci sequence, with ASCII preview and SVG export.
   - **Mandelbulb Raymarcher** — render the 3D Mandelbulb fractal in pure Python, with ASCII preview and PNG export.
 - All new projects use only the Python standard library and remain compatible with Python 3.6+.
+- The new projects can export their results as images (PNG/SVG) so outputs can be viewed clearly outside the terminal, not just as ASCII art.
 
 </details>
 
@@ -1654,15 +1655,16 @@ These projects are ideal for those with experience in Python. Each project inclu
 ### 18. Advanced Sorting Algorithms
 
 - **Difficulty**: 7.0/10
-- **Description**: Implement the O(n log n) sorting workhorses -- merge sort, quick sort, and heap sort -- plus counting sort, a non-comparison sort. Includes a benchmark that times each algorithm and counts its element comparisons, and a self-test mode.
+- **Description**: Implement the O(n log n) sorting workhorses -- merge sort, quick sort, and heap sort -- plus counting sort, a non-comparison sort. Includes a benchmark that times each algorithm and counts its element comparisons, a self-test mode, and PNG export of a before/after bar chart.
 - **Solution**: [Intermediate/18_advanced_sorting_algorithms.py](Intermediate/18_advanced_sorting_algorithms.py)
-- **Run**: `python Intermediate/18_advanced_sorting_algorithms.py` (add `--test` for self-tests, or `--sizes 100 1000 10000` to benchmark).
+- **Run**: `python Intermediate/18_advanced_sorting_algorithms.py` (add `--test` for self-tests, `--sizes 100 1000 10000` to benchmark, or `--output sorting.png` to save a before/after bar chart image).
 - **Steps**:
   1. Implement merge sort by splitting the list, sorting each half, and merging while taking the left element on ties to stay stable.
   2. Implement quick sort with a Hoare partition and a median-of-three pivot, recursing into the smaller partition to bound the stack.
   3. Implement heap sort by building a max-heap with sift-down, then repeatedly swapping the maximum to the end.
   4. Implement counting sort by tallying each non-negative integer key into an array and reading the keys back in order.
   5. Wrap the data in a counting `int` subclass to measure comparisons, time each run, and verify the result against `sorted()`.
+  6. Optionally render a before/after bar chart to a PNG with `--output` so the result is visible outside the terminal.
 - **Tips**:
   <details><summary>Tip 1:</summary>
 
@@ -1679,15 +1681,16 @@ These projects are ideal for those with experience in Python. Each project inclu
 ### 19. Sorting Visualizer
 
 - **Difficulty**: 6.5/10
-- **Description**: Watch sorting algorithms work as an animated bar chart in the terminal. Each algorithm is a generator that yields the indices it touches, so the drawing loop is completely separate from the sorting logic.
+- **Description**: Watch sorting algorithms work as an animated bar chart in the terminal, or export a PNG filmstrip of the animation. Each algorithm is a generator that yields the indices it touches, so the drawing loop is completely separate from the sorting logic.
 - **Solution**: [Intermediate/19_sorting_visualizer.py](Intermediate/19_sorting_visualizer.py)
-- **Run**: `python Intermediate/19_sorting_visualizer.py --algorithm quick --size 40` (needs a real terminal; redirected output prints a static summary).
+- **Run**: `python Intermediate/19_sorting_visualizer.py --algorithm quick --size 40` (needs a real terminal; redirected output prints a static summary). Add `--output filmstrip.png` to save a multi-frame PNG instead of animating.
 - **Steps**:
   1. Write each sort as a generator that mutates the list and `yield`s the indices it just swapped or wrote.
   2. Use `yield from` to forward the steps of recursive quick sort and merge sort calls.
   3. Render one frame per yield as a vertical bar chart, highlighting the active bars with ANSI color.
   4. Redraw in place with ANSI cursor-home and clear codes, hiding the cursor during the animation.
   5. Fall back to a static final chart and step count when output is not a terminal.
+  6. Optionally capture several stages of the sort into a PNG filmstrip with `--output` so the animation can be viewed without a terminal.
 - **Tips**:
   <details><summary>Tip 1:</summary>
 
@@ -1704,15 +1707,16 @@ These projects are ideal for those with experience in Python. Each project inclu
 ### 20. Maze Generator & Solver
 
 - **Difficulty**: 7.5/10
-- **Description**: Carve a random "perfect" maze with the recursive backtracker, then solve it with three classic graph searches -- BFS, DFS, and A* -- and compare how many cells each one explores.
+- **Description**: Carve a random "perfect" maze with the recursive backtracker, then solve it with three classic graph searches -- BFS, DFS, and A* -- and compare how many cells each one explores. Can save the solved maze as a PNG image.
 - **Solution**: [Intermediate/20_maze_generator_solver.py](Intermediate/20_maze_generator_solver.py)
-- **Run**: `python Intermediate/20_maze_generator_solver.py --width 20 --height 10 --seed 7` (add `--algorithm astar` for a single solver, or `--test`).
+- **Run**: `python Intermediate/20_maze_generator_solver.py --width 20 --height 10 --seed 7` (add `--algorithm astar` for a single solver, `--test`, or `--output maze.png` to save a PNG; with `--algorithm all` one PNG per solver is written).
 - **Steps**:
   1. Represent the maze as a grid with cells at odd coordinates and walls between them.
   2. Carve passages with the recursive backtracker using an explicit stack so huge mazes cannot overflow the call stack.
   3. Solve with BFS (a queue) to guarantee a shortest path, counting explored cells.
   4. Solve with DFS (a stack) and A* (a priority queue ordered by distance-so-far plus Manhattan heuristic).
   5. Draw each solution path over the maze and print a comparison of path lengths and cells explored.
+  6. Optionally save the solved maze as a PNG with `--output`, coloring walls, the path, the start, and the exit.
 - **Tips**:
   <details><summary>Tip 1:</summary>
 
@@ -1729,15 +1733,15 @@ These projects are ideal for those with experience in Python. Each project inclu
 ### 21. Fibonacci Word Fractal
 
 - **Difficulty**: 6.5/10
-- **Description**: Draw the Fibonacci word fractal, a self-similar curve grown from the Fibonacci sequence. The Fibonacci word is built by concatenation (S(n) = S(n-1) + S(n-2)), its lengths are the Fibonacci numbers, and reading it as turtle-graphics instructions draws the fractal.
+- **Description**: Draw the Fibonacci word fractal, a self-similar curve grown from the Fibonacci sequence. The Fibonacci word is built by concatenation (S(n) = S(n-1) + S(n-2)), its lengths are the Fibonacci numbers, and reading it as turtle-graphics instructions draws the fractal. Exports crisp SVG and PNG images.
 - **Solution**: [Intermediate/21_fibonacci_word_fractal.py](Intermediate/21_fibonacci_word_fractal.py)
-- **Run**: `python Intermediate/21_fibonacci_word_fractal.py --svg fibonacci.svg` (add `--word` to see the words and their Fibonacci lengths).
+- **Run**: `python Intermediate/21_fibonacci_word_fractal.py --svg fibonacci.svg` (or `--png fibonacci.png`; add `--word` to see the words and their Fibonacci lengths, and `--stroke` / `--png-width` to tune the PNG).
 - **Steps**:
   1. Build the Fibonacci word by repeatedly concatenating the previous two words.
   2. Walk the word as turtle instructions: every digit steps forward; a "0" turns left on even positions and right on odd positions; a "1" goes straight.
   3. Rasterize the path into an ASCII preview, using two characters per cell to keep the proportions.
   4. Auto-pick the largest iteration that fits the preview box, or set it with `--iterations`.
-  5. Optionally export the curve as a crisp SVG polyline using only the standard library.
+  5. Optionally export the curve as a crisp SVG polyline or a thin-stroked PNG using only the standard library.
 - **Tips**:
   <details><summary>Tip 1:</summary>
 
@@ -1748,6 +1752,12 @@ These projects are ideal for those with experience in Python. Each project inclu
   <details><summary>Tip 2:</summary>
 
   SVG's y axis points down while the turtle's y grows upward, so mirror the y coordinate when writing the polyline.
+
+  </details>
+
+  <details><summary>Tip 3:</summary>
+
+  The curve is rectilinear (only 90-degree turns), so right angles are expected. If a raster preview looks chunky, use thin strokes (`--stroke 2`) and a larger `--png-width`, or prefer the vector SVG, to reveal the delicate self-similar detail.
 
   </details>
 

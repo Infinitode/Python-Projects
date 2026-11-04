@@ -10,10 +10,13 @@ Run with:
     python Intermediate/19_sorting_visualizer.py --algorithm quick --size 40
     python Intermediate/19_sorting_visualizer.py --algorithm merge --delay 0.01
     python Intermediate/19_sorting_visualizer.py --list
+    python Intermediate/19_sorting_visualizer.py --algorithm quick --output filmstrip.png
 
 Animation needs a real terminal (ANSI escape codes, supported by Linux,
 macOS, and Windows 10+). When output is redirected to a file or pipe, the
-script prints a static final chart and step counts instead.
+script prints a static final chart and step counts instead. Use --output
+to save a PNG filmstrip of the animation so it can be viewed without a
+terminal.
 
 Only the Python standard library is used.
 """
@@ -21,8 +24,10 @@ Only the Python standard library is used.
 import argparse
 import os
 import random
+import struct
 import sys
 import time
+import zlib
 
 BAR = "██"
 RESET = "\x1b[0m"
@@ -193,6 +198,71 @@ def static_report(arr, algorithm, name):
     return steps
 
 
+def _write_png(filename, width, height, pixels):
+    """Write an 8-bit RGB PNG from a flat row-major list of (r, g, b) tuples."""
+
+    def chunk(tag, data):
+        return (
+            struct.pack(">I", len(data))
+            + tag
+            + data
+            + struct.pack(">I", zlib.crc32(tag + data) & 0xFFFFFFFF)
+        )
+
+    raw = bytearray()
+    for rgb in pixels:
+        raw.extend(rgb)
+    stride = width * 3
+    scanlines = b"".join(
+        b"\x00" + bytes(raw[y * stride:(y + 1) * stride]) for y in range(height)
+    )
+    png = (
+        b"\x89PNG\r\n\x1a\n"
+        + chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0))
+        + chunk(b"IDAT", zlib.compress(scanlines, 9))
+        + chunk(b"IEND", b"")
+    )
+    with open(filename, "wb") as handle:
+        handle.write(png)
+
+
+def save_filmstrip(filename, algorithm, size, seed=None, frames=6):
+    """Save a PNG filmstrip showing the sort at several stages of the animation."""
+    rng = random.Random(seed)
+    arr = list(range(1, size + 1))
+    rng.shuffle(arr)
+
+    states = [list(arr)]
+    for _ in ALGORITHMS[algorithm](arr):
+        states.append(list(arr))
+
+    picks = [round(i * (len(states) - 1) / (frames - 1)) for i in range(frames)]
+    cell, gap, chart_h, pad = 12, 4, 180, 16
+    frame_w = size * (cell + gap) + pad * 2
+    frame_h = chart_h + pad * 2
+    width = frames * frame_w + (frames - 1) * 8
+    height = frame_h
+    pixels = [(24, 26, 34)] * (width * height)
+
+    def rect(x0, y0, x1, y1, color):
+        for y in range(max(0, y0), min(height, y1)):
+            for x in range(max(0, x0), min(width, x1)):
+                pixels[y * width + x] = color
+
+    peak = max(states[0])
+    for f, state_index in enumerate(picks):
+        values = states[state_index]
+        ox = f * (frame_w + 8)
+        rect(ox, 0, ox + frame_w, frame_h, (32, 35, 46))
+        done = state_index == len(states) - 1
+        color = (90, 200, 130) if done else (230, 180, 70)
+        for i, value in enumerate(values):
+            bar_h = max(2, int(value / peak * chart_h))
+            x = ox + pad + i * (cell + gap)
+            rect(x, frame_h - pad - bar_h, x + cell, frame_h - pad, color)
+    _write_png(filename, width, height, pixels)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Animated terminal visualizer for classic sorting algorithms."
@@ -207,6 +277,8 @@ def main():
     parser.add_argument("--seed", type=int, default=None, help="random seed for a reproducible shuffle")
     parser.add_argument("--no-color", action="store_true", help="disable ANSI colors")
     parser.add_argument("--list", action="store_true", help="list available algorithms and exit")
+    parser.add_argument("--output", metavar="FILE", help="save a PNG filmstrip of the animation instead of animating")
+    parser.add_argument("--frames", type=int, default=6, help="number of frames in the exported filmstrip (default: 6)")
     args = parser.parse_args()
 
     if args.list:
@@ -218,6 +290,13 @@ def main():
         parser.error("--height must be at least 3")
     if args.delay < 0:
         parser.error("--delay cannot be negative")
+    if args.frames < 2:
+        parser.error("--frames must be at least 2")
+
+    if args.output:
+        save_filmstrip(args.output, args.algorithm, args.size, args.seed, args.frames)
+        print("Saved {} sort filmstrip to {}".format(args.algorithm, args.output))
+        return 0
 
     rng = random.Random(args.seed)
     arr = list(range(1, args.size + 1))

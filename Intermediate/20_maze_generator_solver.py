@@ -14,16 +14,22 @@ Run with:
     python Intermediate/20_maze_generator_solver.py --width 20 --height 10 --seed 7
     python Intermediate/20_maze_generator_solver.py --algorithm astar
     python Intermediate/20_maze_generator_solver.py --test
+    python Intermediate/20_maze_generator_solver.py --output maze.png
 
 Legend: '#' wall, '.' solution path, 'S' start, 'E' exit.
+Use --output to save the solved maze as a PNG image. With --algorithm all,
+one PNG per solver is written (maze_astar.png, maze_bfs.png, maze_dfs.png).
 Only the Python standard library is used.
 """
 
 import argparse
 import heapq
+import os
 import random
+import struct
 import sys
 import time
+import zlib
 from collections import deque
 
 WALL = "#"
@@ -233,6 +239,75 @@ def run_self_test():
     print("All self-tests passed (generation + 3 solvers).")
 
 
+def _write_png(filename, width, height, pixels):
+    """Write an 8-bit RGB PNG from a flat row-major list of (r, g, b) tuples."""
+
+    def chunk(tag, data):
+        return (
+            struct.pack(">I", len(data))
+            + tag
+            + data
+            + struct.pack(">I", zlib.crc32(tag + data) & 0xFFFFFFFF)
+        )
+
+    raw = bytearray()
+    for rgb in pixels:
+        raw.extend(rgb)
+    stride = width * 3
+    scanlines = b"".join(
+        b"\x00" + bytes(raw[y * stride:(y + 1) * stride]) for y in range(height)
+    )
+    png = (
+        b"\x89PNG\r\n\x1a\n"
+        + chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0))
+        + chunk(b"IDAT", zlib.compress(scanlines, 9))
+        + chunk(b"IEND", b"")
+    )
+    with open(filename, "wb") as handle:
+        handle.write(png)
+
+
+def save_maze_image(filename, grid, path, cell=16):
+    """Save the solved maze as a PNG image with walls, path, start, and exit."""
+    path_set = set(path)
+    gh, gw = len(grid), len(grid[0])
+    width, height = gw * cell, gh * cell
+    pixels = [(250, 250, 252)] * (width * height)
+
+    def rect(x0, y0, x1, y1, color):
+        for y in range(max(0, y0), min(height, y1)):
+            for x in range(max(0, x0), min(width, x1)):
+                pixels[y * width + x] = color
+
+    wall = (30, 34, 46)
+    open_col = (245, 246, 250)
+    path_col = (240, 180, 60)
+    for r in range(gh):
+        for c in range(gw):
+            if grid[r][c] == WALL:
+                color = wall
+            elif (r, c) in path_set:
+                color = path_col
+            else:
+                color = open_col
+            rect(c * cell, r * cell, (c + 1) * cell, (r + 1) * cell, color)
+
+    start, end = (1, 1), (gh - 2, gw - 2)
+    rect(start[1] * cell + 3, start[0] * cell + 3,
+         start[1] * cell + cell - 3, start[0] * cell + cell - 3, (70, 190, 110))
+    rect(end[1] * cell + 3, end[0] * cell + 3,
+         end[1] * cell + cell - 3, end[0] * cell + cell - 3, (220, 80, 80))
+    _write_png(filename, width, height, pixels)
+
+
+def _image_path(filename, key, multiple):
+    """When exporting several solvers, give each PNG a distinct suffix."""
+    if not multiple:
+        return filename
+    base, ext = os.path.splitext(filename)
+    return "{}_{}{}".format(base, key, ext or ".png")
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Generate a random maze and solve it with BFS, DFS, and A*."
@@ -245,6 +320,7 @@ def main():
         help="which solver to run (default: all)",
     )
     parser.add_argument("--test", action="store_true", help="run correctness self-tests and exit")
+    parser.add_argument("--output", metavar="FILE", help="save solved maze(s) as PNG image(s)")
     args = parser.parse_args()
 
     if args.test:
@@ -276,6 +352,10 @@ def main():
             )
         )
         results.append((title, len(path) - 1, explored))
+        if args.output:
+            target = _image_path(args.output, key, len(names) > 1)
+            save_maze_image(target, grid, path)
+            print("Saved maze image to {}".format(target))
 
     if len(results) > 1:
         print("\n--- Comparison ---")

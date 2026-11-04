@@ -19,15 +19,20 @@ Run with:
     python Intermediate/21_fibonacci_word_fractal.py
     python Intermediate/21_fibonacci_word_fractal.py --iterations 16 --width 120
     python Intermediate/21_fibonacci_word_fractal.py --svg fibonacci.svg
+    python Intermediate/21_fibonacci_word_fractal.py --png fibonacci.png
     python Intermediate/21_fibonacci_word_fractal.py --word
 
 The terminal preview uses two characters per cell so the curve keeps its
-proportions; --svg writes a crisp vector image you can open in a browser.
+proportions; --svg writes a crisp vector image you can open in a browser,
+and --png writes a raster image with thin strokes (tune with --stroke and
+--png-width) so the fractal is clear outside the terminal.
 Only the Python standard library is used.
 """
 
 import argparse
+import struct
 import sys
+import zlib
 
 
 def fibonacci_word(n):
@@ -138,6 +143,63 @@ def print_word_table(limit):
     print("the same sequence as Beginner project 21, now drawing a fractal.")
 
 
+def _write_png(filename, width, height, pixels):
+    """Write an 8-bit RGB PNG from a flat row-major list of (r, g, b) tuples."""
+
+    def chunk(tag, data):
+        return (
+            struct.pack(">I", len(data))
+            + tag
+            + data
+            + struct.pack(">I", zlib.crc32(tag + data) & 0xFFFFFFFF)
+        )
+
+    raw = bytearray()
+    for rgb in pixels:
+        raw.extend(rgb)
+    stride = width * 3
+    scanlines = b"".join(
+        b"\x00" + bytes(raw[y * stride:(y + 1) * stride]) for y in range(height)
+    )
+    png = (
+        b"\x89PNG\r\n\x1a\n"
+        + chunk(b"IHDR", struct.pack(">IIBBBBB", width, height, 8, 2, 0, 0, 0))
+        + chunk(b"IDAT", zlib.compress(scanlines, 9))
+        + chunk(b"IEND", b"")
+    )
+    with open(filename, "wb") as handle:
+        handle.write(png)
+
+
+def save_png(points, filename, target_width=1000, stroke=2):
+    """Rasterize the curve to a PNG with thin strokes so the fractal stays crisp."""
+    min_x, min_y, max_x, max_y = path_bounds(points)
+    span_x = max(1, max_x - min_x)
+    span_y = max(1, max_y - min_y)
+    scale = target_width / span_x
+    pad = 20
+    width = int(span_x * scale) + pad * 2
+    height = int(span_y * scale) + pad * 2
+    pixels = [(250, 250, 252)] * (width * height)
+
+    def rect(x0, y0, x1, y1, color):
+        for y in range(max(0, y0), min(height, y1)):
+            for x in range(max(0, x0), min(width, x1)):
+                pixels[y * width + x] = color
+
+    def to_px(x, y):
+        return (int(pad + (x - min_x) * scale), int(pad + (max_y - y) * scale))
+
+    ink = (27, 42, 74)
+    half = max(1, stroke // 2)
+    for (ax, ay), (bx, by) in zip(points, points[1:]):
+        x0, y0 = to_px(ax, ay)
+        x1, y1 = to_px(bx, by)
+        rect(min(x0, x1) - half, min(y0, y1) - half,
+             max(x0, x1) + half + 1, max(y0, y1) + half + 1, ink)
+    _write_png(filename, width, height, pixels)
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Draw the Fibonacci word fractal in the terminal or as SVG."
@@ -149,6 +211,9 @@ def main():
     parser.add_argument("--width", type=int, default=100, help="max preview width in characters (default: 100)")
     parser.add_argument("--height", type=int, default=40, help="max preview height in lines (default: 40)")
     parser.add_argument("--svg", metavar="FILE", help="also save the curve as an SVG image")
+    parser.add_argument("--png", metavar="FILE", help="also save the curve as a PNG image")
+    parser.add_argument("--stroke", type=int, default=2, help="PNG stroke width in pixels (default: 2)")
+    parser.add_argument("--png-width", type=int, default=1000, help="target PNG width in pixels (default: 1000)")
     parser.add_argument("--plain", action="store_true", help="use '#' instead of block characters")
     parser.add_argument("--word", action="store_true", help="print the Fibonacci words and their lengths")
     args = parser.parse_args()
@@ -157,6 +222,10 @@ def main():
         parser.error("--iterations must be at least 1")
     if args.width < 10 or args.height < 5:
         parser.error("--width must be >= 10 and --height must be >= 5")
+    if args.stroke < 1:
+        parser.error("--stroke must be at least 1")
+    if args.png_width < 100:
+        parser.error("--png-width must be at least 100")
 
     n = args.iterations if args.iterations is not None else choose_iterations(args.width, args.height)
     word = fibonacci_word(n)
@@ -184,8 +253,11 @@ def main():
     if args.svg:
         save_svg(points, args.svg)
         print("\nSaved vector image to {}".format(args.svg))
-    else:
-        print("\nTip: add --svg fibonacci.svg to save a crisp vector image.")
+    if args.png:
+        save_png(points, args.png, target_width=args.png_width, stroke=args.stroke)
+        print("Saved PNG image to {}".format(args.png))
+    if not args.svg and not args.png:
+        print("\nTip: add --svg fibonacci.svg or --png fibonacci.png to save a crisp image.")
     return 0
 
 
